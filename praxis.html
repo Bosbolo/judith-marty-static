@@ -1,75 +1,22 @@
 <html>
 <head>
-	<meta charset="utf-8">  
+	<meta charset="utf-8" />  
 	<title>Praxis &ndash; Psychologische Praxis Judith Marty</title>
-	<meta name="description" content="Psychologische Praxis in Zürich">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
-	<link rel="stylesheet" href="assets/normalize.css">
-	<link rel="stylesheet" href="assets/milligram.min.css">
-	<link rel="stylesheet" href="assets/main.css">
+	<meta name="description" content="Psychologische Praxis in Zürich" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />	
+	<link rel="stylesheet" href="assets/normalize.css" />
+	<link rel="stylesheet" href="assets/milligram.min.css" />
+	<link rel="stylesheet" href="assets/main.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<script src="assets/components.js"></script>
 	<!-- 
 	<script type='text/javascript' src='assets/unitegallery/js/jquery-11.0.min.js'></script> -->
 	<script type='text/javascript' src='assets/unitegallery/js/unitegallery.min.js'></script> 	
-	<link rel='stylesheet' href='assets/unitegallery/css/unite-gallery.css' type='text/css' /> 
+	<link rel='stylesheet' href='assets/unitegallery/css/unite-gallery.css' type='text/css' / /> 
 	<script type='text/javascript' src='assets/unitegallery/themes/tiles/ug-theme-tiles.js'></script> 
-	<link rel='stylesheet' href='assets/unitegallery/themes/default/ug-theme-default.css' type='text/css' /> 		
+	<link rel='stylesheet' href='assets/unitegallery/themes/default/ug-theme-default.css' type='text/css' / /> 		
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMWX6CRR00"></script>
-	<script>
-	// Google Tag
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'G-SMWX6CRR00');
-
-	// navigation
-	// when the user clicks on the button, toggle between hiding and showing the dropdown content */
-	function myFunction() {
-	  document.getElementById("dropdown").classList.toggle("open");
-	};
-
-	// Close the dropdown if the user clicks outside of it
-	window.onclick = function(event) {
-	  if (!event.target.matches('.dropbtn')) {
-	    var dropdowns = document.getElementsByClassName("dropdown-content");
-	    var i;
-	    for (i = 0; i < dropdowns.length; i++) {
-	      var openDropdown = dropdowns[i];
-	      if (openDropdown.classList.contains('open')) {
-	        openDropdown.classList.remove('open');
-	      }
-	    }
-	  }
-	};
-
-	// jquery
-	$(document).ready(function(){		
-
-		// page fade-in efx
-		$('#top-container, #content, #footer, #finisher').fadeIn(400);
-
-		// add navigation components and functions 
-		$('#navigation').append(navigationComponent);
-
-	    // add footer component
-	    $('#footer').append(footerComponent);	    	
-	    $('#finisher').append(finisherComponent);
-	    $('#cookie-notice-banner').append(cookieNoticeBanner);
-
-		// cookie notice banner
-		var currentYear = new Date().getFullYear();
-		var cookieNoticed = sessionStorage.getItem('cookie-noticed');
-		if (cookieNoticed != currentYear){
-			$('#cookie-notice-banner').fadeIn(400);
-		};
-	    $("#cookie-notice-banner-button").click(function(){
-			$('#cookie-notice-banner').fadeOut(400);		
-			sessionStorage.setItem('cookie-noticed',currentYear);
-		});
-	});
-	
-	</script>	
+	<script src="assets/common.js"></script>	
 </head>
 <body>
 
@@ -79,7 +26,7 @@
 	<div class="container">
 		<div class="row">		
     		<div class="column" id="logo">
-    			<a href="https://www.judith-marty.ch"><img src="assets/psychologische-praxis.svg" width="242"></a>
+    			<a href="https://www.judith-marty.ch"><img src="assets/psychologische-praxis.svg" width="242" /></a>
     		</div>
 	    	<div class="column" id="navigation"></div>
 	    </div>
@@ -108,17 +55,17 @@
 				<p>Beim Eingang finden Sie eine Klingel mit der Anschrift «Praxis Uni65». Die Praxis befindet sich im Hochparterre.</p>
 			</div>
 		</div>
-	<hr>
+	<hr />
 	</div>	
 	<!--
 	<div class="container gallery">
 		<div class="row">
 			<div class="column">
 				<div id="gallery" style="display:none;">
-				<img alt="Praxisraum" src="assets/gallery/thumbs/Psychologische-Praxis-Judith-Marty-01.jpg" data-image="assets/gallery/Psychologische-Praxis-Judith-Marty-01.jpg" data-description="Image Description">
-				<img alt="Praxisraum" src="assets/gallery/thumbs/Psychologische-Praxis-Judith-Marty-03.jpg" data-image="assets/gallery/Psychologische-Praxis-Judith-Marty-03.jpg" data-description="Image Description">
-				<img alt="Eingangsbereich" src="assets/gallery/thumbs/Psychologische-Praxis-Judith-Marty-05.jpg" data-image="assets/gallery/Psychologische-Praxis-Judith-Marty-05.jpg" data-description="Image Description">
-				<img alt="Eingangsbereich" src="assets/gallery/thumbs/Psychologische-Praxis-Judith-Marty-04.jpg" data-image="assets/gallery/Psychologische-Praxis-Judith-Marty-04.jpg" data-description="Image Description">
+				<img alt="Praxisraum" src="assets/gallery/thumbs/Psychologische-Praxis-Judith-Marty-01.jpg" data-image="assets/gallery/Psychologische-Praxis-Judith-Marty-01.jpg" data-description="Image Description" />
+				<img alt="Praxisraum" src="assets/gallery/thumbs/Psychologische-Praxis-Judith-Marty-03.jpg" data-image="assets/gallery/Psychologische-Praxis-Judith-Marty-03.jpg" data-description="Image Description" />
+				<img alt="Eingangsbereich" src="assets/gallery/thumbs/Psychologische-Praxis-Judith-Marty-05.jpg" data-image="assets/gallery/Psychologische-Praxis-Judith-Marty-05.jpg" data-description="Image Description" />
+				<img alt="Eingangsbereich" src="assets/gallery/thumbs/Psychologische-Praxis-Judith-Marty-04.jpg" data-image="assets/gallery/Psychologische-Praxis-Judith-Marty-04.jpg" data-description="Image Description" />
 				</div>
 				<script type="text/javascript"> 
 					jQuery(document).ready(function(){ 
@@ -141,13 +88,13 @@
 				</script>				
 			</div>
 		</div>	
-	<hr>		
+	<hr />		
 	</div>-->
 	<div class="container">
 		<div class="row">
 			<div class="column">
 				<h3>Standort</h3>
-				<p>Universitätstrasse 65<br>8006 Zürich<br><a target="_blank" href="https://maps.app.goo.gl/dbHSkVHXjeEvcBWYA">Google Maps</a></p>				
+				<p>Universitätstrasse 65<br />8006 Zürich<br /><a target="_blank" href="https://maps.app.goo.gl/dbHSkVHXjeEvcBWYA">Google Maps</a></p>				
 				<h4>Öffentlicher Verkehr</h4>
 				<p>Über Zürich HB oder über Bellvue bis Station Winkelriedstrasse.</p>
 				<h4>Auto</h4>
@@ -157,7 +104,7 @@
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d556.4437393894927!2d8.548244450046102!3d47.38240634010956!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa0a0dfa4736f%3A0x61b030789125bfa8!2sUniversit%C3%A4tstrasse%2065%2C%208006%20Z%C3%BCrich!5e0!3m2!1sen!2sch!4v1738184601083!5m2!1sen!2sch" width="100%" height="600"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 		</div>
-	<hr>
+	<hr />
 	</div>
 	<div class="container">
 		<div class="row">

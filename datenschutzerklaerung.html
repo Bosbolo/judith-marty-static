@@ -1,68 +1,15 @@
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" />
 	<title>Datenschutzerklärung &ndash; Judith Marty lic. phil. </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
-	<link rel="stylesheet" href="assets/normalize.css">
-	<link rel="stylesheet" href="assets/milligram.min.css">
-	<link rel="stylesheet" href="assets/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />	
+	<link rel="stylesheet" href="assets/normalize.css" />
+	<link rel="stylesheet" href="assets/milligram.min.css" />
+	<link rel="stylesheet" href="assets/main.css" />
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMWX6CRR00"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<script src="assets/components.js"></script>
-	<script>
-	// Google Tag
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'G-SMWX6CRR00');
-
-	// navigation
-	// when the user clicks on the button, toggle between hiding and showing the dropdown content */
-	function myFunction() {
-	  document.getElementById("dropdown").classList.toggle("open");
-	};
-
-	// Close the dropdown if the user clicks outside of it
-	window.onclick = function(event) {
-	  if (!event.target.matches('.dropbtn')) {
-	    var dropdowns = document.getElementsByClassName("dropdown-content");
-	    var i;
-	    for (i = 0; i < dropdowns.length; i++) {
-	      var openDropdown = dropdowns[i];
-	      if (openDropdown.classList.contains('open')) {
-	        openDropdown.classList.remove('open');
-	      }
-	    }
-	  }
-	};
-
-	// jquery
-	$(document).ready(function(){		
-
-		// page fade-in efx
-		$('#top-container, #content, #footer, #finisher').fadeIn(400);
-
-		// add navigation components and functions 
-		$('#navigation').append(navigationComponent);
-
-	    // add footer component
-	    $('#footer').append(footerComponent);	    	
-	    $('#finisher').append(finisherComponent);
-	    $('#cookie-notice-banner').append(cookieNoticeBanner);
-
-		// cookie notice banner
-		var currentYear = new Date().getFullYear();
-		var cookieNoticed = sessionStorage.getItem('cookie-noticed');
-		if (cookieNoticed != currentYear){
-			$('#cookie-notice-banner').fadeIn(400);
-		};
-	    $("#cookie-notice-banner-button").click(function(){
-			$('#cookie-notice-banner').fadeOut(400);		
-			sessionStorage.setItem('cookie-noticed',currentYear);
-		});
-	});
-	
-	</script>	
+	<script src="assets/common.js"></script>	
 </head>
 <body>
 
@@ -72,7 +19,7 @@
 	<div class="container">
 		<div class="row">		
     		<div class="column column-33-lt-mobile" id="logo">
-				<a href="https://www.judith-marty.ch"><img src="assets/psychologische-praxis.svg" width="242"></a>
+				<a href="https://www.judith-marty.ch"><img src="assets/psychologische-praxis.svg" width="242" /></a>
     		</div>
 	    	<div class="column" id="navigation"></div>
 	    </div>
@@ -97,14 +44,14 @@
 				<p>Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:<p>
 				<div class="row">
 	    			<div class="column">
-	    				<p>Judith Marty<br>
-						Lutherstrasse 4<br>
+	    				<p>Judith Marty<br />
+						Lutherstrasse 4<br />
 						8004 Zürich
 						</p>
 					</div>
 	    			<div class="column">
-	    				<p>+41 78 704 10 44<br>
-						judith.marty@hin.ch<br>
+	    				<p>+41 78 704 10 44<br />
+						judith.marty@hin.ch<br />
 						<a href="https://www.judith-marty.ch">www.judith-marty.ch</a>
 						</p>
 	    			</div>

@@ -1,150 +1,161 @@
 <html>
-<head>
-	<meta charset="utf-8">  
-	<title>Psychologische Praxis Judith Marty</title>
-	<meta name="description" content="Supervision &ndash; Selbsterfahrung &ndash; Psychologische Beratung & Coaching in Zürich &ndash; eidg. anerkannte Psychotherapeutin und Supervisorin">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
-	<link rel="stylesheet" href="assets/normalize.css">
-	<link rel="stylesheet" href="assets/milligram.min.css">
-	<link rel="stylesheet" href="assets/main.css">	
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMWX6CRR00"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-	<script src="assets/components.js"></script>
-	<script>
-	// Google Tag
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'G-SMWX6CRR00');
+    <head>
+        <meta charset="utf-8" />
+        <title>Psychologische Praxis Judith Marty</title>
+        <meta
+            name="description"
+            content="Supervision &ndash; Selbsterfahrung &ndash; Psychologische Beratung & Coaching in Zürich &ndash; eidg. anerkannte Psychotherapeutin und Supervisorin"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" href="assets/normalize.css" />
+        <link rel="stylesheet" href="assets/milligram.min.css" />
+        <link rel="stylesheet" href="assets/main.css" />
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-SMWX6CRR00"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="assets/components.js"></script>
+        <script src="assets/common.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <div id="top-container">
+            <div class="container">
+                <div class="row rowVisible">
+                    <div class="column" id="logo">
+                        <a href="https://www.judith-marty.ch"
+                            ><img
+                                src="assets/psychologische-praxis.svg"
+                                width="242"
+                        /></a>
+                    </div>
+                    <div class="column" id="navigation"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row rowVisible" id="stage">
+                    <div class="column index">
+                        <div id="border">
+                            <div id="svg-container" align="center">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="60"
+                                    height="95"
+                                    viewBox="0 0 60 95"
+                                >
+                                    <path
+                                        fill="#FFF"
+                                        d="M60,28 L60,76.460274 C60,79.2136986 59.7279793,81.7223744 59.1839378,83.9863014 C58.6398964,86.2502283 57.7720207,88.2082192 56.5803109,89.860274 C55.388601,91.5123288 53.8212435,92.7819635 51.8782383,93.6691781 C49.9352332,94.5563927 47.5647668,95 44.7668394,95 C42.1243523,95 39.8704663,94.5563927 38.0051813,93.6691781 C36.1398964,92.7819635 34.611399,91.5429224 33.4196891,89.9520548 C32.2279793,88.3611872 31.3601036,86.4796804 30.8160622,84.3075342 C30.2720207,82.1353881 30,79.7643836 30,77.1945205 L30,77.1945205 L30,73.2479452 L31.5544041,73.2479452 L31.5544041,77.1945205 C31.5544041,82.5789954 32.6683938,86.6020548 34.8963731,89.2636986 C37.1243523,91.9253425 40.4145078,93.2561644 44.7668394,93.2561644 C46.9948187,93.2561644 48.9507772,92.9502283 50.634715,92.3383562 C52.3186528,91.726484 53.7435233,90.716895 54.9093264,89.309589 C56.0751295,87.9022831 56.9559585,86.0360731 57.5518135,83.7109589 C58.1476684,81.3858447 58.4455959,78.5100457 58.4455959,75.0835616 L58.4455959,75.0835616 L58.4455959,28 L60,28 Z M2.99530516,0 L30.4068858,33.6664061 L30.5884194,33.6664061 L58,0 L57.9956986,3.53336774 L31.3069901,36.0697674 L29.6883151,36.0697674 L1.99687011,2.31092437 L1.81533646,2.31092437 L1.81533646,66 L0,66 L0,0 L2.99530516,0 Z"
+                                    />
+                                </svg>
+                            </div>
+                            <h2 class="hide-lt-tablet">
+                                respektvoll, empathisch, fokussiert
+                            </h2>
+                            <h2 class="show-lt-tablet">
+                                respektvoll &ndash; empathisch &ndash;
+                                fokussiert
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	// navigation
-	// when the user clicks on the button, toggle between hiding and showing the dropdown content */
-	function myFunction() {
-	  document.getElementById("dropdown").classList.toggle("open");
-	};
-
-	// Close the dropdown if the user clicks outside of it
-	window.onclick = function(event) {
-	  if (!event.target.matches('.dropbtn')) {
-	    var dropdowns = document.getElementsByClassName("dropdown-content");
-	    var i;
-	    for (i = 0; i < dropdowns.length; i++) {
-	      var openDropdown = dropdowns[i];
-	      if (openDropdown.classList.contains('open')) {
-	        openDropdown.classList.remove('open');
-	      }
-	    }
-	  }
-	};
-
-	// jquery
-	$(document).ready(function(){		
-
-		// page fade-in efx
-		$('#top-container, #content, #footer, #finisher').fadeIn(400);
-
-		// add navigation components and functions 
-		$('#navigation').append(navigationComponent);
-
-	    // add footer component
-	    $('#footer').append(footerComponent);	    	
-	    $('#finisher').append(finisherComponent);
-	    $('#cookie-notice-banner').append(cookieNoticeBanner);
-
-		// cookie notice banner
-		var currentYear = new Date().getFullYear();
-		var cookieNoticed = sessionStorage.getItem('cookie-noticed');
-		if (cookieNoticed != currentYear){
-			$('#cookie-notice-banner').fadeIn(400);
-		};
-	    $("#cookie-notice-banner-button").click(function(){
-			$('#cookie-notice-banner').fadeOut(400);		
-			sessionStorage.setItem('cookie-noticed',currentYear);
-		});
-	});
-	
-	</script>	
-</head>
-<body>
-
-<!-- Header -->
-<div id="top-container">
-	<div class="container">
-		<div class="row rowVisible">		
-    		<div class="column" id="logo">
-    			<a href="https://www.judith-marty.ch"><img src="assets/psychologische-praxis.svg" width="242"></a>
-    		</div>
-	    	<div class="column" id="navigation"></div>
-	    </div>
-	</div>
-	<div class="container">
-		<div class="row rowVisible" id="stage">
-	    	<div class="column index">
-	    		<div id="border">
-	    			<div id="svg-container" align="center">
-						<svg xmlns="http://www.w3.org/2000/svg" width="60" height="95" viewBox="0 0 60 95">
-						  <path fill="#FFF" d="M60,28 L60,76.460274 C60,79.2136986 59.7279793,81.7223744 59.1839378,83.9863014 C58.6398964,86.2502283 57.7720207,88.2082192 56.5803109,89.860274 C55.388601,91.5123288 53.8212435,92.7819635 51.8782383,93.6691781 C49.9352332,94.5563927 47.5647668,95 44.7668394,95 C42.1243523,95 39.8704663,94.5563927 38.0051813,93.6691781 C36.1398964,92.7819635 34.611399,91.5429224 33.4196891,89.9520548 C32.2279793,88.3611872 31.3601036,86.4796804 30.8160622,84.3075342 C30.2720207,82.1353881 30,79.7643836 30,77.1945205 L30,77.1945205 L30,73.2479452 L31.5544041,73.2479452 L31.5544041,77.1945205 C31.5544041,82.5789954 32.6683938,86.6020548 34.8963731,89.2636986 C37.1243523,91.9253425 40.4145078,93.2561644 44.7668394,93.2561644 C46.9948187,93.2561644 48.9507772,92.9502283 50.634715,92.3383562 C52.3186528,91.726484 53.7435233,90.716895 54.9093264,89.309589 C56.0751295,87.9022831 56.9559585,86.0360731 57.5518135,83.7109589 C58.1476684,81.3858447 58.4455959,78.5100457 58.4455959,75.0835616 L58.4455959,75.0835616 L58.4455959,28 L60,28 Z M2.99530516,0 L30.4068858,33.6664061 L30.5884194,33.6664061 L58,0 L57.9956986,3.53336774 L31.3069901,36.0697674 L29.6883151,36.0697674 L1.99687011,2.31092437 L1.81533646,2.31092437 L1.81533646,66 L0,66 L0,0 L2.99530516,0 Z"/>
-						</svg>
-					</div>
-					<h2 class="hide-lt-tablet">respektvoll, empathisch, fokussiert</h2>
-					<h2 class="show-lt-tablet">respektvoll &ndash; empathisch &ndash; fokussiert</h2>
-				</div>
-	    	</div>
-		</div>	
-	</div>	
-</div>
-
-<!-- Content -->	
-<div id="content" class="index">
-	<div class="container">
-		<div class="row">
-			<div class="column about">
-				<h2>Wer ich bin</h2>
-				<p>Ich vertrete eine ganzheitliche und integrative Sicht des Menschen. Mein Angebot setzt dort an, wo Sie selber nicht mehr weiterkommen. Sei es bei persönlichen Anliegen wie belastenden Lebenssituationen, psychischen Krisen und Erkrankungen sowie zwischenmenschlichen Problemen oder bei beruflichen Herausforderungen.</p>
-				<p>Gemeinsam erarbeiten wir neue Perspektiven und Handlungsmöglichkeiten. Ich fördere Sie darin, eigene Stärken und Ressourcen aufzubauen und positive Entwicklungsschritte anzugehen.</p>
-			</div>
-			<div class="column column-33-lt-mobile">
-				<img class="hide-lgr-mobile" src="assets/psychologische-praxis-judith-marty.jpg">
-				<img class="show-mobile-only" src="assets/psychologische-praxis-judith-marty-mobile.jpg">
-			</div>
-		</div>
-		<hr>
-	</div>
-	<div class="container offer">
-		<div class="row fadein">
-			<div class="column">
-				<h2>Für Privatpersonen</h2>
-				<a href="psychotherapie.html">Psychotherapie</a><br>
-				<a href="psychologische-beratung-coaching.html">Beratung & Coaching</a><br>
-				<a href="workshops.html">Workshops</a>
-			</div>
-			<div class="column">
-				<h2>Für Fachpersonen</h2>
-				<a href="supervision.html">Supervision</a><br>
-				<a href="selbsterfahrung.html">Selbsterfahrung</a>
-			</div>
-			<div class="column">
-				<h2>Für Organisationen</h2>
-				<a href="psychologische-beratung-coaching.html">Beratung & Coaching</a><br>
-				<a href="supervision.html">Supervision</a><br>
-				<a href="workshops.html">Referate & Workshops</a>
-			</div>
-		</div>
-	<hr>
-	</div>		
-	<div class="container values">
-		<div class="row fadein">
-			<div class="column">
-				<h2>Wofür ich stehe</h2>
-				<p>Ich bin überzeugt, dass Wohlbefinden und Gesundheit das Zusammenspiel von Körper, Seele und Geist ist.<br>Unsere moderne Lebens- und Arbeitsweise geht oft mit einer hohen geistigen und psychischen Belastung einher. Es ist sinnvoll, uns unseren mentalen und seelischen Regungen mit der genau gleichen Sorgfalt zu widmen, wie unserem körperlichen Wohlergehen.</p> 
-				<p>Wenn wir uns in dieser Form für uns selber engagieren, leisten wir nicht nur einen Beitrag zur Erhaltung unserer Leistungsfähigkeit, sondern sorgen auch für mehr Zufriedenheit, Gelassenheit und Lebendigkeit in unserem Leben.</p> 
-			</div>
-		</div>
-	<hr>
-	</div>
-</div>
-<!-- Footer -->
-<div id="footer"></div>
-<div id="finisher"></div>
-<div id="cookie-notice-banner"></div>
-</body>
+        <!-- Content -->
+        <div id="content" class="index">
+            <div class="container">
+                <div class="row">
+                    <div class="column about">
+                        <h2>Wer ich bin</h2>
+                        <p>
+                            Ich vertrete eine ganzheitliche und integrative
+                            Sicht des Menschen. Mein Angebot setzt dort an, wo
+                            Sie selber nicht mehr weiterkommen. Sei es bei
+                            persönlichen Anliegen wie belastenden
+                            Lebenssituationen, psychischen Krisen und
+                            Erkrankungen sowie zwischenmenschlichen Problemen
+                            oder bei beruflichen Herausforderungen.
+                        </p>
+                        <p>
+                            Gemeinsam erarbeiten wir neue Perspektiven und
+                            Handlungsmöglichkeiten. Ich fördere Sie darin,
+                            eigene Stärken und Ressourcen aufzubauen und
+                            positive Entwicklungsschritte anzugehen.
+                        </p>
+                    </div>
+                    <div class="column column-33-lt-mobile">
+                        <img
+                            class="hide-lgr-mobile"
+                            src="assets/psychologische-praxis-judith-marty.jpg"
+                        />
+                        <img
+                            class="show-mobile-only"
+                            src="assets/psychologische-praxis-judith-marty-mobile.jpg"
+                        />
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <div class="container offer">
+                <div class="row fadein">
+                    <div class="column">
+                        <h2>Für Privatpersonen</h2>
+                        <a href="psychotherapie.html">Psychotherapie</a><br />
+                        <a href="psychologische-beratung-coaching.html"
+                            >Beratung & Coaching</a
+                        ><br />
+                        <a href="workshops.html">Workshops</a>
+                    </div>
+                    <div class="column">
+                        <h2>Für Fachpersonen</h2>
+                        <a href="supervision.html">Supervision</a><br />
+                        <a href="selbsterfahrung.html">Selbsterfahrung</a>
+                    </div>
+                    <div class="column">
+                        <h2>Für Organisationen</h2>
+                        <a href="psychologische-beratung-coaching.html"
+                            >Beratung & Coaching</a
+                        ><br />
+                        <a href="supervision.html">Supervision</a><br />
+                        <a href="workshops.html">Referate & Workshops</a>
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <div class="container values">
+                <div class="row fadein">
+                    <div class="column">
+                        <h2>Wofür ich stehe</h2>
+                        <p>
+                            Ich bin überzeugt, dass Wohlbefinden und Gesundheit
+                            das Zusammenspiel von Körper, Seele und Geist
+                            ist.<br />Unsere moderne Lebens- und Arbeitsweise
+                            geht oft mit einer hohen geistigen und psychischen
+                            Belastung einher. Es ist sinnvoll, uns unseren
+                            mentalen und seelischen Regungen mit der genau
+                            gleichen Sorgfalt zu widmen, wie unserem
+                            körperlichen Wohlergehen.
+                        </p>
+                        <p>
+                            Wenn wir uns in dieser Form für uns selber
+                            engagieren, leisten wir nicht nur einen Beitrag zur
+                            Erhaltung unserer Leistungsfähigkeit, sondern sorgen
+                            auch für mehr Zufriedenheit, Gelassenheit und
+                            Lebendigkeit in unserem Leben.
+                        </p>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+        <!-- Footer -->
+        <div id="footer"></div>
+        <div id="finisher"></div>
+        <div id="cookie-notice-banner"></div>
+    </body>
+</html>

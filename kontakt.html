@@ -1,18 +1,18 @@
 <html>
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8" / />
         <title>Kontakt &ndash; Psychologische Praxis Judith Marty</title>
         <meta
             name="description"
             content="Kontakt Psychologische Praxis Judith Marty &ndash; Psychologische Praxis in Zürich"
-        />
+        / />
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-        />
-        <link rel="stylesheet" href="assets/normalize.css" />
-        <link rel="stylesheet" href="assets/milligram.min.css" />
-        <link rel="stylesheet" href="assets/main.css" />
+        / />
+        <link rel="stylesheet" href="assets/normalize.css" / />
+        <link rel="stylesheet" href="assets/milligram.min.css" / />
+        <link rel="stylesheet" href="assets/main.css" / />
         <style type="text/css">
             #top-container {
                 background-image: url(assets/silhouette.jpg);
@@ -25,61 +25,7 @@
         ></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="assets/components.js"></script>
-        <script>
-            // Google Tag
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-            gtag("config", "G-SMWX6CRR00");
-
-            // navigation
-            // when the user clicks on the button, toggle between hiding and showing the dropdown content */
-            function myFunction() {
-                document.getElementById("dropdown").classList.toggle("open");
-            }
-
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function (event) {
-                if (!event.target.matches(".dropbtn")) {
-                    var dropdowns =
-                        document.getElementsByClassName("dropdown-content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains("open")) {
-                            openDropdown.classList.remove("open");
-                        }
-                    }
-                }
-            };
-
-            // jquery
-            $(document).ready(function () {
-                // page fade-in efx
-                $("#top-container, #content, #footer, #finisher").fadeIn(400);
-
-                // add navigation components and functions
-                $("#navigation").append(navigationComponent);
-
-                // add footer component
-                $("#footer").append(footerComponent);
-                $("#finisher").append(finisherComponent);
-                $("#cookie-notice-banner").append(cookieNoticeBanner);
-
-                // cookie notice banner
-                var currentYear = new Date().getFullYear();
-                var cookieNoticed = sessionStorage.getItem("cookie-noticed");
-                if (cookieNoticed != currentYear) {
-                    $("#cookie-notice-banner").fadeIn(400);
-                }
-                $("#cookie-notice-banner-button").click(function () {
-                    $("#cookie-notice-banner").fadeOut(400);
-                    sessionStorage.setItem("cookie-noticed", currentYear);
-                });
-            });
-        </script>
+        <script src="assets/common.js"></script>
     </head>
     <body>
         <!-- Header -->
@@ -91,7 +37,7 @@
                             ><img
                                 src="assets/psychologische-praxis.svg"
                                 width="242"
-                        /></a>
+                        / /></a>
                     </div>
                     <div class="column" id="navigation"></div>
                 </div>
@@ -117,7 +63,7 @@
                         <p>
                             <a href="mailto:judith.marty@hin.ch"
                                 >judith.marty@hin.ch</a
-                            ><br />+41 78 704 10 44
+                            ><br / />+41 78 704 10 44
                         </p>
                     </div>
                 </div>

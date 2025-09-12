@@ -1,70 +1,17 @@
 <html>
 <head>
-	<meta charset="utf-8">  
+	<meta charset="utf-8" />  
 	<title>Psychotherapie &ndash; Psychologische Praxis Judith Marty</title>
-	<meta name="description" content="Psychotherapie in Zürich &ndash; Psychologische Praxis Judith Marty">
-  	<meta name="keywords" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
-	<link rel="stylesheet" href="assets/normalize.css">
-	<link rel="stylesheet" href="assets/milligram.min.css">
-	<link rel="stylesheet" href="assets/main.css">
+	<meta name="description" content="Psychotherapie in Zürich &ndash; Psychologische Praxis Judith Marty" />
+  	<meta name="keywords" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />	
+	<link rel="stylesheet" href="assets/normalize.css" />
+	<link rel="stylesheet" href="assets/milligram.min.css" />
+	<link rel="stylesheet" href="assets/main.css" />
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMWX6CRR00"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<script src="assets/components.js"></script>
-	<script>
-	// Google Tag
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'G-SMWX6CRR00');
-
-	// navigation
-	// when the user clicks on the button, toggle between hiding and showing the dropdown content */
-	function myFunction() {
-	  document.getElementById("dropdown").classList.toggle("open");
-	};
-
-	// Close the dropdown if the user clicks outside of it
-	window.onclick = function(event) {
-	  if (!event.target.matches('.dropbtn')) {
-	    var dropdowns = document.getElementsByClassName("dropdown-content");
-	    var i;
-	    for (i = 0; i < dropdowns.length; i++) {
-	      var openDropdown = dropdowns[i];
-	      if (openDropdown.classList.contains('open')) {
-	        openDropdown.classList.remove('open');
-	      }
-	    }
-	  }
-	};
-
-	// jquery
-	$(document).ready(function(){		
-
-		// page fade-in efx
-		$('#top-container, #content, #footer, #finisher').fadeIn(400);
-
-		// add navigation components and functions 
-		$('#navigation').append(navigationComponent);
-
-	    // add footer component
-	    $('#footer').append(footerComponent);	    	
-	    $('#finisher').append(finisherComponent);
-	    $('#cookie-notice-banner').append(cookieNoticeBanner);
-
-		// cookie notice banner
-		var currentYear = new Date().getFullYear();
-		var cookieNoticed = sessionStorage.getItem('cookie-noticed');
-		if (cookieNoticed != currentYear){
-			$('#cookie-notice-banner').fadeIn(400);
-		};
-	    $("#cookie-notice-banner-button").click(function(){
-			$('#cookie-notice-banner').fadeOut(400);		
-			sessionStorage.setItem('cookie-noticed',currentYear);
-		});
-	});
-	
-	</script>
+	<script src="assets/common.js"></script>
 </head>
 <body>
 
@@ -74,7 +21,7 @@
 	<div class="container">
 		<div class="row">		
     		<div class="column" id="logo">
-    			<a href="https://www.judith-marty.ch"><img src="assets/psychologische-praxis.svg" width="242"></a>
+    			<a href="https://www.judith-marty.ch"><img src="assets/psychologische-praxis.svg" width="242" /></a>
     		</div>
 			<div class="column" id="navigation"></div>
 	    </div>
@@ -107,7 +54,7 @@
 				<p>Erfolgreiche Psychotherapie fördert Ihre Stärken und Ressourcen und trägt dazu bei, ein selbstbestimmtes Leben zu führen.</p>
 			</div>
 		</div>
-	<hr>
+	<hr />
 	</div>
 	<div class="container">
 		<div class="row">
@@ -120,7 +67,7 @@
 					<p>Meine Vorgehensweise dient der Stärkung Ihrer Ressourcen und der Förderung Ihrer Selbstheilungskräfte.</p>				
 			</div>
 		</div>	
-		<hr>	
+		<hr />	
 	</div>	
 	<div class="container">
 		<div class="row">
@@ -139,7 +86,7 @@
 				<p>Bei Bedarf biete ich ausserdem testpsychologische Abklärungen für verschiedene Fragestellungen an.</p>
 			</div>
 		</div>
-	<hr>
+	<hr />
 	</div>
 	<div class="container">
 		<div class="row">
@@ -159,35 +106,35 @@
 				<p>Die Kosten für psychologische Psychotherapie können auch als Selbstzahler:in privat bezahlt werden.</p>
 				<p>Der Tarif für psychologische Psychotherapie beträgt für das Erstgespräch à 90 Minuten CHF 270 und für eine reguläre Einzelsitzung à 60 Minuten CHF 180 (inkl. Vor- und Nachbereitung) und wird pro 5 Minuten abgerechnet.</p>
 				<p>
-					<img class="pdf" src="assets/pdf.png"><a target="_blank" href="assets/Anordnung%20psychologische%20Psychotherapie%20Judith%20Marty.pdf">Formular Anordnung psychologische Psychotherapie</a><br>
-					<img class="pdf" src="assets/pdf.png"><a target="_blank" href="assets/FSP%20Informationen%20für%20Patientinnen.pdf">FSP Informationen für Patientinnen</a><br>
-					<img class="pdf" src="assets/pdf.png"><a target="_blank" href="assets/FSP%20Informationen%20für%20anordnende%20Fachpersonen.pdf">FSP Informationen für anordnende Fachpersonen</a></p>
+					<img class="pdf" src="assets/pdf.png" /><a target="_blank" href="assets/Anordnung%20psychologische%20Psychotherapie%20Judith%20Marty.pdf">Formular Anordnung psychologische Psychotherapie</a><br />
+					<img class="pdf" src="assets/pdf.png" /><a target="_blank" href="assets/FSP%20Informationen%20für%20Patientinnen.pdf">FSP Informationen für Patientinnen</a><br />
+					<img class="pdf" src="assets/pdf.png" /><a target="_blank" href="assets/FSP%20Informationen%20für%20anordnende%20Fachpersonen.pdf">FSP Informationen für anordnende Fachpersonen</a></p>
 			</div>	
 		</div>
-	<hr>
+	<hr />
 	</div>
 	<div class="container">
 		<div class="row kontakt">				
 			<div class="column  left">
-				<a href="judith-marty.html"><img src="assets/judith-marty-psychotherapeutin-angebot.jpg"></a>
+				<a href="judith-marty.html"><img src="assets/judith-marty-psychotherapeutin-angebot.jpg" /></a>
 			</div>
 			<div class="column right">
 				<h3>Kontakt aufnehmen</h3>				
 				<p><a href="mailto:judith.marty@hin.ch">judith.marty@hin.ch</a>
-				<br><a href="tel:+41787041044">+41 78 704 10 44</a></p>
+				<br /><a href="tel:+41787041044">+41 78 704 10 44</a></p>
 				<a href="judith-marty.html">Mehr über mich erfahren</a>
 			</div>		
 		</div>
-	<hr>
+	<hr />
 	</div>
 	<div class="container">
 		<div class="row">			
 			<div class="column">
 				<div class="grey-box">
 					<h3>Notfälle</h3>
-					<p>Wenden Sie sich im Notfall an den ärztlichen Notfalldienst:<br>
+					<p>Wenden Sie sich im Notfall an den ärztlichen Notfalldienst:<br />
 						Ärztefon, Notarzt und Notfallpsychiater in der Stadt Zürich: 0800 33 66 55 (24h)</p>
-					<p>oder an das Kriseninterventionszentrum:<br>
+					<p>oder an das Kriseninterventionszentrum:<br />
 					Krisenintervention KIZ, Militärstrasse 8, 8021 Zürich: 044 296 73 10 (24h)</p>
 				</div>
 			</div>
