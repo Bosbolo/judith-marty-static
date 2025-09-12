@@ -65,7 +65,7 @@ var finisherComponent = `
   <div class="container">
     <div class="row">   
       <div class="column">
-        <p>&#169; 2024 Praxis Judith Marty<a href="datenschutzerklaerung.html">Datenschutzerklärung</a></p>
+        <p>&#169; 2025 Praxis Judith Marty<a href="datenschutzerklaerung.html">Datenschutzerklärung</a></p>
       </div>        
     </div>
   </div>
