@@ -1,0 +1,175 @@
+/* Mobile First Media Queries */
+body{letter-spacing: 0;}
+@font-face {font-family: "Helvetica Neue UltraLight"; src: url("HelveticaNeue-UltraLight.ttf")}
+h1,h2,h5,p,a,li,label{color: #363636}
+h3,h4{color:#484848;}
+h1,h2,h5{font-family: 'Helvetica Neue UltraLight', 'Open Sans', sans-serif; font-weight: 100}
+h3,h4 {font-family: 'Helvetica Neue', 'Open Sans', sans-serif;}
+p,a,li,label,td, span{font-family: 'Open sans', 'Helvetica Neue', sans-serif;}
+h1{color:#fff; font-size: 2.4rem; letter-spacing:0.5rem; line-height:3.2rem; font-weight: 100; margin: 0}
+h2{font-size: 3.2rem; line-height:4rem; font-weight: 100; letter-spacing:0.15rem; margin: 0 0 2.4rem 0}
+h3{font-size: 2.8rem; line-height:3.2rem; font-weight: 600; letter-spacing:0.04rem; margin: 0 0 4rem 0}
+h4{font-size: 2rem; line-height:3.2rem; font-weight: 600; letter-spacing: 0.05; margin: 0 0 1.6rem 0}
+h5{font-size: 2rem; line-height:3.2rem; font-weight: 600; letter-spacing:0.15rem; margin: 0}
+p, a, li,label, span{font-size: 2rem;}
+p{margin:0 0 3.2rem 0; }
+a{color: rgb(124, 182, 198)}/* Ursprüngliche Farbe #87ADBD*/
+a:hover{color: rgb(124, 182, 198); text-decoration: underline; }
+ul{list-style: disc outside; list-style-image:url('Bulletpoint.svg'); margin:0 0 3.2rem 1.3rem;}
+li{margin:0;padding-left: 1rem;}
+fieldset, input, select, textarea{margin-bottom: 1.2rem;}
+input[type='email'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='text'], input[type='url'], textarea, select {padding: 1.6rem 1.6rem; height:4.8rem; border-color: #d7d7d7;border-radius: 0}
+input[type='email']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, textarea:focus, select:focus {border-color: rgb(124, 182, 198);}
+label{font-weight: 300; margin-bottom: 0rem}
+button, input, input[type='submit'], optgroup, select, textarea {font-family: 'Open sans'; font-size: 2rem; font-weight: 300; line-height: 1.6;}
+button{background-color: rgb(124, 182, 198); border: none; margin-top: 1.2rem;height:4.8rem; text-transform: none; width: 16rem}
+button:hover {background-color: #363636;}
+textarea {min-height: 12rem;}		
+td{padding: 0.8rem; color: #363636; font-size: 1.6rem; font-weight:300; border-bottom:0.1rem solid #D7D7D7;}
+td a{font-size: 1.6rem; font-weight:300}
+figure{margin: 0}
+#top-container, #content, #footer, #finisher, #cookie-notice-banner{display: none}
+#top-container{background-color: #3A7591;color: #fff;background: url(fernsicht.jpg); background-size: cover; background-position: 50% 0%;}
+#top-container .column{width: auto}
+#logo{margin: 2.4rem 0 1.6rem 0; width: 20rem}
+/* falls mobile untereinander kommen soll statt nebeneinander
+#navigation.mobile {position: static;padding: 1.6rem 0 }
+#navigation.mobile a{display: block}
+*/
+#navigation {padding: 0.8rem 0 }
+#navigation a, #navigation span{display: inline; font-weight: 200; color: #fff; margin-right: 1.6rem; letter-spacing: 0;}
+#navigation a:last-child{margin-right: 0}
+#navigation a:hover, #navigation span:hover{color:#051825;text-decoration: none;}
+#navigation a.selected, #navigation span.selected{color: #051825;}
+#navigation #dropdown {position: relative; display: inline-block;margin-top: 0.4rem;}
+#navigation #dropdown{display: none;position: absolute; background: #fff;background-image: url("dropdown-triangle.png");   background-repeat: no-repeat; width: 92%; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;}
+#navigation #dropdown.open{display: block;}
+#navigation #dropdown a{color: #363636;display:block; margin:0; padding:0.8rem 0 0.8rem 2rem;}
+#navigation #dropdown a:hover,#navigation #dropdown-content a.selected{background: rgb(124, 182, 198);color: #fff}
+#navigation #dropdown a:first-child{margin-top: 1.6rem}
+#navigation #dropdown a:last-child{margin-bottom: 1.2rem}
+#navigation #dropdown hr {border: 0; border-top: 0.1rem solid #d7d7d7;margin: 1.6rem 0;}
+#stage .column #border{margin: 1.6rem 0 2.4rem 0; padding: 15rem 1.6rem 2.4rem 2.4rem ; border:1px solid #fff}
+#stage .column.index #border{padding: 5.6rem  3.2rem;}
+#stage .column.index h2{margin:2.4rem 0 0 0; font-size:3.2rem; line-height:3.2rem; color:#ffffff;text-align: center;}
+#stage .column.beratung #border {padding: 11.8rem 1.6rem 2.4rem 2.4rem ;}
+#content .container {margin-top: 4.8rem;}
+#content hr{margin: 1.6rem 0 0 0;border-top:0.1rem solid #D7D7D7;}
+#content.index hr{margin: 4.8rem 0 0 0;}
+#content.index .offer h2 {margin-bottom: 0}
+#content.index .offer .column {margin-bottom: 3.2rem}
+#content.index .offer .column:last-child {margin-bottom:0}
+#content.index .values img {float: left;}
+#content.index .values h3 {font-weight: 200; font-size: 2.8rem; padding-top: 2.4rem;padding-left: 14rem}
+#content.index .values p:last-child{margin-bottom: 0rem}
+#content .kontakt div {margin-bottom: 0}
+#content .kontakt div p:last-child{margin-bottom: 0.4rem} 
+#content .kontakt img{margin-bottom: 2rem}
+#content .kontakt h3{margin-bottom: 2rem;font-weight: 100;}
+#content .kontakt h4{margin:2rem 0 0 0;}
+#content .kontakt hr {margin: 2rem 0 0 0;}
+#content.psychotherapie .pdf{width: 24px;margin: 0 1rem 0 0;}
+#content.supervision h3, #content.selbsterfahrung h3{font-family: 'Helvetica Neue UltraLight', 'Open Sans', sans-serif; font-size: 3.2rem; line-height:4rem; font-weight: 100; letter-spacing:0.15rem; margin: 0 0 2.4rem 0}
+#content.supervision h2, #content.selbsterfahrung h2{font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 2.8rem; line-height:3.2rem; font-weight: 600; letter-spacing:0.04rem; margin: 0 0 4rem 0}
+#content.workshops #angebot h3{margin-bottom: 2rem}
+#content.workshops #angebot .individuell{margin-top:3.2rem; padding-right: 2.4rem}
+#content.uebermich .container{margin-top: 6.4rem;}
+#content.uebermich .row{margin-top: 2.4rem;}
+#content.uebermich img:first-child{margin-bottom: 3.2rem}
+#content.team img{margin-bottom: 3.2rem}
+#content.praxis iframe {margin-bottom: 3.2rem}
+#content .gallery hr {margin-top: 4.8rem;}
+#content.kontakt h3{margin-bottom: 1.6rem}
+#content.kontakt h4{margin-top: 3.2rem; margin-bottom: 0}
+#content.kontakt span {font-size:16px; 	color:#D7D7D7}
+#content.kontakt form{margin-bottom: 2rem}
+#content.kontakt .alert {padding:2.4rem;margin-bottom: 3.2rem}
+#content.kontakt .alert p{margin: 0}
+#content.kontakt .alert ul{margin-bottom: 0}
+#content.kontakt .alert-danger{background-color:#FFE4E4}
+#content.kontakt .alert-success{background-color:#DEFFDD}
+#content.kontakt .sicherheitsfrage{width: 6rem;display: block;}
+#content.meditation {margin-bottom: 4.8rem}
+#content.meditation p{margin-bottom: 0.8rem}
+#content.meditation figure{margin-bottom: 4.8rem}
+#content.hilti h4, #content.meditation h4{margin-bottom: 0}
+#content.hilti .audiofiles .row{margin-bottom: 1.6rem}
+#content.stressworkshop .angebot-title h3{margin-bottom: 1.6rem}
+#content.stressworkshop .referat h3, #content .workshop h3{font-weight: 200;margin-bottom: 2rem}
+#content.stressworkshop .number span{font-weight: 200;font-size:4rem;line-height: 4.8rem}
+#content.stressworkshop .column-number{width: 6rem}
+#content.workshops #angebot h4, #content.stressworkshop .angebot-box h4{margin-bottom: 0}
+#footer{background: rgb(124, 182, 198); margin-top: 3.2rem}
+#footer .row {padding: 3.2rem 0}
+#footer .row .column{margin-bottom: 3.2rem}
+#footer .row .column:last-child{margin-bottom:0rem}
+#footer h5, #footer p, #footer a{color: #363636}
+#footer h5{margin-bottom: 0.8rem;}
+#footer p,#footer a{font-size: 16px}
+#footer a:hover {color: #fff;text-decoration: none}
+#footer p {margin: 0}
+#finisher{height:4.8rem; background: #051825;}
+#finisher .column{margin-top: 1.3rem}
+#finisher p, #finisher a{font-size:1.6rem;color:#fff;margin: 0}
+#finisher a{margin-left:2.4rem;}
+#cookie-notice-banner{position:fixed;bottom:0; width: 100%; background: #051825;}
+#cookie-notice-banner p {color: #fff;}
+#cookie-notice-banner p, #cookie-notice-banner a {margin:2rem 0 ;font-size: 1.4rem; line-height:2rem;}
+#cookie-notice-banner button{float: right;font-size: 1.4rem; line-height:2rem; height: 3.2rem; width: 12rem; margin: 1.2rem 0;padding:0; background-color: #2d7a8f}
+
+/* Helper */
+.row .show-lt-tablet{display:none}
+.hide-lgr-mobile{display: none}
+.grey-box{padding:3.2rem;background-color: #f1f1f1;margin-bottom: 1.6rem}
+.grey-box h3{margin-bottom: 3.2rem}
+.grey-box p:last-child{margin-bottom: 0;}
+.grey-box-wcolumns{padding:3.2rem;background-color: #f1f1f1;margin-bottom: 1.6rem}
+p.lead{margin-bottom: 1.6rem; font-style: italic;}
+.button, button{margin-bottom: 0}
+.button, button, input[type='button'], input[type='reset'], input[type='submit']{background: #7cb6c6;border-color: #7cb6c6;height: 4rem; line-height: 4rem; font-size: 1.6rem; font-family: "Open Sans";font-weight: 400;}
+.button.button-outline, button.button-outline, input[type='button'].button-outline, input[type='reset'].button-outline, input[type='submit'].button-outline{color: #7cb6c6}
+.button.button-outline:focus, .button.button-outline:hover, button.button-outline:focus, button.button-outline:hover, input[type='button'].button-outline:focus, input[type='button'].button-outline:hover, input[type='reset'].button-outline:focus, input[type='reset'].button-outline:hover, input[type='submit'].button-outline:focus, input[type='submit'].button-outline:hover{border-color: #d7d7d7;background: #d7d7d7;text-decoration: none;color: #484848}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+	/* Larger than mobile screen Breakpoint von 40 zu 48 (iPhones) verschieben – */
+	.row {flex-direction: column;margin: 0;width: 100%;}
+	.show-mobile-only{display: none}
+	.hide-lgr-mobile{display: block}
+}
+/* Alternativer Breakpoint für larger than mobile screens */
+@media (min-width: 48.0rem) {
+	/* Helper */
+	.row {flex-direction: row; margin-left: -1.0rem; width: calc(100% + 2.0rem);}
+	.row .column.column-33-lt-mobile{flex: 0 0 33.3333%;max-width: 33.3333%;}
+	.row .column.column-50-tablet{flex: 0 0 50%;max-width: 50%;}
+	.row .column.column-66-lt-mobile{flex: 0 0 66.6666%;max-width: 66.6666%;}
+	.row .column.column-100-lt-mobile{flex: 0 0 100%;max-width: 100%;}
+	
+	#content.index .about {padding: 0 8rem 0 1rem}
+	#content.index .offer h2 {margin-bottom: 1.6rem}
+	#content.index .offer .column {margin-bottom: 0}
+
+	/* Styling corrections*/
+	h1{font-size: 6.8rem; line-height:7.2rem}
+	#navigation {padding:3.2rem 0.8rem 0 0; position: absolute; right: 1rem;}
+	#navigation a, #navigation span{margin-right: 2.4rem}
+	#stage .column #border{padding: 19rem 1.6rem 5.6rem 4rem }
+	#stage .column.index #border{padding: 12rem  3.2rem;}
+	#stage .column.beratung #border{padding: 11.8rem 1.6rem 5.6rem 4.8rem }
+	#content .portrait .left{padding-right: 2rem;}
+	#content .portrait .right{padding-left: 2rem}
+	#footer h5{margin-bottom: 1.6rem;}	
+	#footer .row .column{margin-bottom: 0}	
+}
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {
+	/* Helper */
+	.row .hide-lt-tablet{display:none;}
+	.row .show-lt-tablet{display:block;}
+	.row .column.column-33-lt-tablet{flex: 0 0 33.3333%;max-width: 33.3333%;}
+	.row .column.column-66-lt-tablet{flex: 0 0 66.6666%;max-width: 66.6666%;}
+	/*Styling adjustments */
+	/* #top-container div div {flex-direction: row;} Navigation nicht neben Logo darstellen */
+	#stage .column.beratung #border{padding: 19rem 1.6rem 5.6rem 4.8rem}
+}   
