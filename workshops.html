@@ -1,0 +1,180 @@
+<html>
+<head>	
+	<meta charset="utf-8">  
+	<title>Workshops &ndash; Psychologische Praxis Judith Marty</title>
+	<meta name="description" content="Workshops in Zürich &ndash; Psychologische Praxis Judith Marty">
+  	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="assets/milligram.min.css">
+	<link rel="stylesheet" href="assets/main.css">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMWX6CRR00"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="assets/components.js"></script>
+	<script>
+	// Google Tag
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-SMWX6CRR00');
+
+	// navigation
+	// when the user clicks on the button, toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("dropdown").classList.toggle("open");
+	};
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('open')) {
+	        openDropdown.classList.remove('open');
+	      }
+	    }
+	  }
+	};
+
+	// jquery
+	$(document).ready(function(){		
+
+		// page fade-in efx
+		$('#top-container, #content, #footer, #finisher').fadeIn(400);
+
+		// add navigation components and functions 
+		$('#navigation').append(navigationComponent);
+
+	    // add footer component
+	    $('#footer').append(footerComponent);	    	
+	    $('#finisher').append(finisherComponent);
+	    $('#cookie-notice-banner').append(cookieNoticeBanner);
+
+		// cookie notice banner
+		var currentYear = new Date().getFullYear();
+		var cookieNoticed = sessionStorage.getItem('cookie-noticed');
+		if (cookieNoticed != currentYear){
+			$('#cookie-notice-banner').fadeIn(400);
+		};
+	    $("#cookie-notice-banner-button").click(function(){
+			$('#cookie-notice-banner').fadeOut(400);		
+			sessionStorage.setItem('cookie-noticed',currentYear);
+		});
+	});
+	
+	</script>		
+</head>
+<body>
+
+
+<!-- Header -->
+<div id="top-container">
+	<div class="container">
+		<div class="row">		
+    		<div class="column" id="logo">
+    			<a href="https://www.judith-marty.ch"><img src="assets/psychologische-praxis.svg" width="242"></a>
+    		</div>
+			<div class="column" id="navigation"></div>
+	    </div>
+	</div>
+	<div class="container">
+		<div class="row" id="stage">
+	    	<div class="column psychotherapie">
+	    		<div id="border">
+					<h1>WORKSHOPS</h1>
+				</div>
+	    	</div>
+		</div>	
+	</div>	
+</div>
+
+
+<!-- Content -->
+<div id="content" class="workshops">
+	<div class="container">
+		<div class="row">
+			<div class="column column-33-lt-tablet">
+				<h2>Entspannung ist alltäglich	</h2>
+			</div>
+			<div class="column">
+					<p>Phasen der Regeneration sind wesentlich für Wohlbefinden, Leistungsfähigkeit und zum Aufbau und Erhalt von Ressourcen.</p>
+					<p>Entspannung und Achtsamkeit steigern die Regenerationsfähigkeit im Alltag.</p>
+					<p>Durch das Erlernen und Anwenden von Entspannung und Achtsamkeit werden Erholung und Regeneration natürlicher Bestandteil des Alltags und kein weiterer Punkt auf der to do Liste.</p>
+			</div>
+		</div>
+	<hr>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="column">
+				<p>In unserer Gesellschaft, die sich durch ein hohes Mass an Aktivität, Leistung, Erreichbarkeit und Schnelllebigkeit auszeichnet, hat Entspannung einen schweren Stand. Zur Erhaltung unserer natürlichen Balance im Leben gehören jedoch sowohl Aktivierungs- als auch Ruhephasen.</p>
+				<p>Meine Workshops schaffen eine Basis für die Anwendung von Entspannung und Achtsamkeit im Alltag. Entspannung und Erholung sind wichtige Ressourcen im Umgang mit Belastungen und Stress und führen bei regelmässiger Durchführung nachweislich zu einer Steigerung des Wohlbefindens und damit der persönlichen Lebensqualität.</p>
+			</div>
+		</div>
+	<hr>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="column">
+				<h3>Inhaltliche Schwerpunkte</h3>
+				<ul>
+					<li>Vermittlung von Wissen über die Neurobiologie des Stresses</li>
+					<li>Die eigenen Stressoren und Stressverstärker kennenlernen</li>
+					<li>Entwicklung von Resilienz und Ressourcen zur Stressbewältigung</li>
+					<li>Vermittlung von Entspannungsmethoden und deren Implementierung im Alltag</li>
+				</ul>
+				<p>Meine Workshops basieren auf neurobiologischen Grundlagen und werden mit integrativen Ansätzen verknüpft. Neben der Vermittlung von Grundlagenwissen stehen der Erwerb und die Anwendung von Achtsamkeit und verschiedenen Entspannungsmethoden im Vordergrund und wie sich diese individuell in den Alltag übertragen lassen.</p>
+			</div>	
+		</div>
+	<hr>
+	</div>
+	<div id="angebot" class="container">
+		<div class="row">
+			<div class="column">
+				<h3>Laufendes Angebot</h3>	
+			</div>				
+		</div>
+		<div class="row">
+			<div class="column"> 
+				<div class="grey-box">
+					<h4>Workshop für Privatpersonen</h4>
+					<p class="lead">Entspannung ist alltäglich</p>
+					<ul>
+					<li>(Online) Workshop in vier Teilen</li>
+					<li>Aktuell sind keine Daten festgelegt</li>
+					<li>jeweils 90 Minuten</li>
+					<li>Kosten: CHF 360</li>
+					</ul>
+					<p>Bei Interesse <a href="kontakt.php">hier Kontakt aufnehmen</a>.</p>
+				</div>
+			</div>
+			<div class="column"> 
+				<div class="grey-box">
+					<h4>Referat & Workshop für Organisationen</h4>
+					<p class="lead">Stress & Stressmanagement</p>
+					<ul>
+					<li>Durchführung vor Ort oder digital</li>
+					<li>Zeitpunkt nach Vereinbarung</li>
+					<li>Kosten: CHF 1500</li>
+					<li><a href="stress-stressmanagement.html">Weitere Informationen</a></li>
+					</ul>
+					<p>Bei Interesse <a href="kontakt.php">hier Kontakt aufnehmen</a>.</p>
+				</div>
+			</div>					
+		</div>
+		<div>
+			<div class="column individuell">
+				<h4>Individuelles Angebot</h4>
+				<p>Gemeinsam mit meinen Kooperationspartnern konzipiere und organisiere ich Workshops, Seminare und Referate. Gerne bereite ich spezifische Inhalte für Sie vor. <a href="kontakt.php">Kontaktieren Sie mich</a> für Ihren persönlichen Workshop.</p>	
+			</div>
+		</div>
+	</div>		
+</div>
+
+<!-- Footer -->
+<div id="footer"></div>
+<div id="finisher"></div>
+<div id="cookie-notice-banner"></div>
+</body>

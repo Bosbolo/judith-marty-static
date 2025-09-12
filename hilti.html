@@ -1,0 +1,207 @@
+<html>
+<head>
+	<meta charset="utf-8">  
+	<title>Mindfulness for Hilti</title>
+	<meta name="description" content="Judith Marty &ndash; Biljana Münch &ndash; Psychologische Praxis in Zürich">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="assets/milligram.min.css">
+	<link rel="stylesheet" href="assets/main.css">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMWX6CRR00"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="assets/components.js"></script>
+	<script>
+	// Google Tag
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-SMWX6CRR00');
+
+	// navigation
+	// when the user clicks on the button, toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("dropdown").classList.toggle("open");
+	};
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('open')) {
+	        openDropdown.classList.remove('open');
+	      }
+	    }
+	  }
+	};
+
+	// jquery
+	$(document).ready(function(){		
+
+		// page fade-in efx
+		$('#top-container, #content, #footer, #finisher').fadeIn(400);
+
+		// add navigation components and functions 
+		$('#navigation').append(navigationComponent);
+
+	    // add footer component
+	    $('#footer').append(footerComponent);	    	
+	    $('#finisher').append(finisherComponent);
+	    $('#cookie-notice-banner').append(cookieNoticeBanner);
+
+		// cookie notice banner
+		var currentYear = new Date().getFullYear();
+		var cookieNoticed = sessionStorage.getItem('cookie-noticed');
+		if (cookieNoticed != currentYear){
+			$('#cookie-notice-banner').fadeIn(400);
+		};
+	    $("#cookie-notice-banner-button").click(function(){
+			$('#cookie-notice-banner').fadeOut(400);		
+			sessionStorage.setItem('cookie-noticed',currentYear);
+		});
+	});
+	
+	</script>
+</head>
+<body>
+
+
+<!-- Header -->
+<div id="top-container">
+	<div class="container">
+		<div class="row">		
+    		<div class="column" id="logo">
+    			<a href="https://www.judith-marty.ch"><img src="assets/psychologische-praxis.svg" width="242"></a>
+    		</div>
+	    </div>
+	</div>
+	<div class="container">
+		<div class="row" id="stage">
+	    	<div class="column">
+	    		<div id="border">
+					<h1>Audio Files</h1>
+				</div>
+	    	</div>
+		</div>	
+	</div>	
+</div>
+
+
+<!-- Content -->
+<div id="content" class="hilti">
+	<div class="container">
+		<div class="row">
+			<div class="column column-33-lt-mobile">
+				<img src="https://www.hilti.group/etc.clientlibs/hilti/ui/resources/assets/images/logo_2016_sRGB.svg">
+			</div>
+			<div class="column">
+				<p>Dear Hilti employees. Here you find the audio files used during our workshops.</p>
+				<p>Liebe Hilti Mitarbeiter. Hier finden Sie die Audio Files, welche im Rahmen unserer Workshops verwendet wurden.</p>
+			</div>
+		</div>
+	</div>
+	<div class="container audiofiles">
+		<div class="row">
+			<h2>Workshop April 2021</h2>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>Imaginary safe-place EN</h4>
+				<p>Instructions for the safe-place, spoken by Judith Marty</p>
+			</div>	
+			<div class="column">
+				<figure>
+				    <audio
+				        controls
+				        src="https://www.judith-marty.ch/assets/Judith-Marty-imaginary-safe-place-EN.mp3">
+				            Your browser does not support the
+				            <code>audio</code> element.
+				    </audio>
+				</figure>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>Imaginationsübung Ressourcenort DE</h4>
+				<p>Anleitung zum Ressourcenort, gesprochen von Judith Marty</p>
+			</div>	
+			<div class="column">
+				<figure>
+				    <audio
+				        controls
+				        src="https://www.judith-marty.ch/assets/Judith-Marty-Imaginationsuebung-Ressourcenort-DE.mp3">
+				            Your browser does not support the
+				            <code>audio</code> element.
+				    </audio>
+				</figure>
+			</div>
+		</div>		
+		<!--<hr>-->
+	</div>
+	<div class="container audiofiles">
+		<div class="row">
+			<h2>Workshop November 2020</h2>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>Body scan EN</h4>
+				<p>Instructions for the body scan, spoken by Judith Marty</p>
+			</div>	
+			<div class="column">
+				<figure>
+				    <audio
+				        controls
+				        src="https://www.judith-marty.ch/assets/Judith-Marty-Body-Scan-EN.mp3">
+				            Your browser does not support the
+				            <code>audio</code> element.
+				    </audio>
+				</figure>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>Body Scan DE</h4>
+				<p>Anleitung zum Body Scan, gesprochen von Judith Marty</p>
+			</div>	
+			<div class="column">
+				<figure>
+				    <audio
+				        controls
+				        src="https://www.judith-marty.ch/assets/Judith-Marty-Body-Scan-DE.mp3">
+				            Your browser does not support the
+				            <code>audio</code> element.
+				    </audio>
+				</figure>
+			</div>
+		</div>		
+		<!--<hr>-->
+	</div>
+	<!--
+	<div class="container">
+		<div class="row workshop">
+			<div class="column">
+				<h3>Workshop (in German)</h3>
+				<h2>Entspannung ist alltäglich</h2>
+				<ul>
+					<li>Online Workshop in vier Teilen</li>
+					<li>Februar 2021, jeweils Dienstagabend 18.30 - 20 Uhr</li>
+					<li>Kosten: CHF 360</li>
+					
+				</ul>				
+			</div>
+			<div class="column">
+					<img src="assets/workshop-mock.jpg">	
+			</div>
+		</div>
+	</div>
+-->
+</div>
+
+
+<!-- Footer -->
+<div id="footer"></div>
+<div id="finisher"></div>
+<div id="cookie-notice-banner"></div>
+</body>

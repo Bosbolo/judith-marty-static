@@ -1,0 +1,169 @@
+<html>
+<head>	
+	<meta charset="utf-8">  
+	<title>Selbsterfahrung &ndash; Psychologische Praxis Judith Marty</title>
+	<meta name="description" content="Selbsterfahrung in Zürich &ndash; Psychologische Praxis Judith Marty &ndash; eidg. anerkannte Psychotherapeutin und Supervisorin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="assets/milligram.min.css">
+	<link rel="stylesheet" href="assets/main.css">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMWX6CRR00"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="assets/components.js"></script>
+	<script>
+	// Google Tag
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-SMWX6CRR00');
+
+	// navigation
+	// when the user clicks on the button, toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("dropdown").classList.toggle("open");
+	};
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('open')) {
+	        openDropdown.classList.remove('open');
+	      }
+	    }
+	  }
+	};
+
+	// jquery
+	$(document).ready(function(){		
+
+		// page fade-in efx
+		$('#top-container, #content, #footer, #finisher').fadeIn(400);
+
+		// add navigation components and functions 
+		$('#navigation').append(navigationComponent);
+
+	    // add footer component
+	    $('#footer').append(footerComponent);	    	
+	    $('#finisher').append(finisherComponent);
+	    $('#cookie-notice-banner').append(cookieNoticeBanner);
+
+		// cookie notice banner
+		var currentYear = new Date().getFullYear();
+		var cookieNoticed = sessionStorage.getItem('cookie-noticed');
+		if (cookieNoticed != currentYear){
+			$('#cookie-notice-banner').fadeIn(400);
+		};
+	    $("#cookie-notice-banner-button").click(function(){
+			$('#cookie-notice-banner').fadeOut(400);		
+			sessionStorage.setItem('cookie-noticed',currentYear);
+		});
+	});
+	
+	</script>
+</head>
+<body>
+
+
+<!-- Header -->
+<div id="top-container">
+	<div class="container">
+		<div class="row">		
+    		<div class="column" id="logo">
+    			<a href="https://www.judith-marty.ch"><img src="assets/psychologische-praxis.svg" width="242"></a>
+    		</div>
+			<div class="column" id="navigation"></div>
+	    </div>
+	</div>
+	<div class="container">
+		<div class="row" id="stage">
+	    	<div class="column">
+	    		<div id="border">
+					<h1>SELBSTERFAHRUNG</h1>
+				</div>
+	    	</div>
+		</div>	
+	</div>	
+</div>
+
+
+<!-- Content -->
+<div id="content" class="selbsterfahrung">
+	<div class="container">
+		<div class="row">
+			<div class="column column-33-lt-tablet">
+				<h3>"Erkenne dich selbst"</h3>
+			</div>
+			<div class="column">
+				<p>Selbsterfahrung ist ein wesentlicher Bestandteil jeder Weiterbildung zum Psychotherapeuten.</p>
+				<p>Dabei geht es um das Bewusstmachen und Reflektieren der eigenen Person mit ihren Erlebens- und Verhaltensmustern.</p>
+				<p>Die Selbsterfahrung dient dem Erwerb selbstreflexiver Fähigkeiten sowie der Verbesserung der therapeutischen Beziehungsgestaltung.</p>
+				<p>Ausserdem wird in der Selbsterfahrung der therapeutische Prozess aus der Klientenperspektive erfahren, um das Verständnis für den Klienten zu fördern.</p>
+			</div>
+		</div>
+	<hr>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="column">
+				<h2>Selbsterfahrung für angehende Psychotherapeuten</h2>
+
+				<p>Durch die Reflexion der eigenen Lebensgeschichte, einschneidender Lebensereignisse sowie der eigenen Normen und Wertvorstellungen wird die therapeutische Kompetenz gesteigert.</p>  
+				<p>Neben der Bewusstmachung und Überwindung eigener Konflikte und Blockaden wird die psychotherapeutische Beziehungsfähigkeit gestärkt. Ich unterstütze Sie dabei, eigene Grenzen zu erkennen und damit umzugehen. Auch Probleme bei der Arbeit oder schwierige Situationen mit Patienten können behandelt werden.</p> 
+				<p>Gemeinsam werden therapieförderliche Selbstanteile und Ressourcen gefestigt. Dadurch kann die Therapeutenpersönlichkeit optimal entfaltet werden.</p>
+       	</div>
+		</div>
+		<div class="row">
+			<div class="column">
+                <h4>An wen richtet sich das Angebot?</h4>
+				
+				<p>Angehende Psychotherapeuten und Psychiater im Rahmen der Psychotherapieweiterbildung.</p>
+				
+			</div>		
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>Anerkennung</h4>
+				<ul>
+					<li>Klaus-Grawe-Institut für Psychologische Therapie</li>
+					<li>Postgraduale Weiterbildung in kognitiver Verhaltenstherapie und Verhaltensmedizin der Universität Zürich</li>
+					<li>Ärztliche Psychotherapie der Universität Zürich</li>
+					<li>Akademie für Verhaltenstherapie und Methodenintegration AIM (Assoziierte Lehrtherapeutin für Verhaltenstherapie)</li>					
+					<li>Postgraduale Studiengänge in Psychotherapie (PSP)</li>
+					<li>Anerkennung von weiteren Instituten auf Anfrage</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>Tarif</h4>
+				<p>Einheit à 45-50 Minuten CHF 180.</p>
+			</div>
+		</div>
+		<hr>
+	</div>
+	<div class="container">
+		<div class="row kontakt">				
+			<div class="column  left">
+				<a href="judith-marty.html"><img src="assets/judith-marty-psychotherapeutin-angebot.jpg"></a>
+			</div>
+			<div class="column right">
+				<h3>Kontakt aufnehmen</h3>				
+				<p><a href="mailto:judith.marty@hin.ch">judith.marty@hin.ch</a>
+				<br><a href="tel:+41787041044">+41 78 704 10 44</a></p>
+				<a href="judith-marty.html">Mehr über mich erfahren</a>
+			</div>		
+		</div>
+	<hr>
+	</div>
+</div>
+
+
+<!-- Footer -->
+	<div id="footer"></div>
+<div id="finisher"></div>
+<div id="cookie-notice-banner"></div>
+</body>

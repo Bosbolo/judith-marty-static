@@ -1,0 +1,190 @@
+<html>
+<head>
+	<meta charset="utf-8">  
+	<title>Judith Marty &ndash; Psychologische Praxis Judith Marty</title>
+	<meta name="description" content="Judith Marty &ndash; Psychologische Praxis in Zürich">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="assets/milligram.min.css">
+	<link rel="stylesheet" href="assets/main.css">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMWX6CRR00"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="assets/components.js"></script>
+	<script>
+	// Google Tag
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-SMWX6CRR00');
+
+	// navigation
+	// when the user clicks on the button, toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("dropdown").classList.toggle("open");
+	};
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('open')) {
+	        openDropdown.classList.remove('open');
+	      }
+	    }
+	  }
+	};
+
+	// jquery
+	$(document).ready(function(){		
+
+		// page fade-in efx
+		$('#top-container, #content, #footer, #finisher').fadeIn(400);
+
+		// add navigation components and functions 
+		$('#navigation').append(navigationComponent);
+
+	    // add footer component
+	    $('#footer').append(footerComponent);	    	
+	    $('#finisher').append(finisherComponent);
+	    $('#cookie-notice-banner').append(cookieNoticeBanner);
+
+		// cookie notice banner
+		var currentYear = new Date().getFullYear();
+		var cookieNoticed = sessionStorage.getItem('cookie-noticed');
+		if (cookieNoticed != currentYear){
+			$('#cookie-notice-banner').fadeIn(400);
+		};
+	    $("#cookie-notice-banner-button").click(function(){
+			$('#cookie-notice-banner').fadeOut(400);		
+			sessionStorage.setItem('cookie-noticed',currentYear);
+		});
+	});
+	
+	</script>
+</head>
+<body>
+
+
+<!-- Header -->
+<div id="top-container">
+	<div class="container">
+		<div class="row">		
+    		<div class="column" id="logo">
+    			<a href="https://www.judith-marty.ch"><img src="assets/psychologische-praxis.svg" width="242"></a>
+    		</div>
+			<div class="column" id="navigation"></div>
+	    </div>
+	</div>
+	<div class="container">
+		<div class="row" id="stage">
+	    	<div class="column">
+	    		<div id="border">
+					<h1>JUDITH MARTY</h1>
+				</div>
+	    	</div>
+		</div>	
+	</div>	
+</div>
+
+
+<!-- Content -->
+<div id="content" class="uebermich">
+	<div class="container">
+		<div class="row">
+			<div class="column column-66-lt-mobile">
+				<p>Ein respektvoller, empathischer und vertrauensvoller Umgang ist für mich die Grundlage für eine erfolgreiche Zusammenarbeit. Dabei stehen für mich Authentizität, Offenheit und Transparenz im Vordergrund.</p>
+				<p>Ich bin überzeugt, dass jeder Mensch die Fähigkeit zur Weiterentwicklung hat. Der Glaube an die Entwicklungsfähigkeit ist dabei eine wesentliche Voraussetzung für die tatsächliche Entwicklung.</p>
+				<p>Während meiner langjährigen psychotherapeutischen Tätigkeit durfte ich viele Menschen ein Stück auf ihrem persönlichen Weg begleiten und sie bei ihren Entwicklungsschritten, aber auch bei Krisen und neuen Lebensphasen unterstützen. Dabei habe ich viel über die Komplexität und Vielfältigkeit des Menschseins erfahren, was mich nach wie vor fasziniert.</p>
+				<p>In meiner Weiterbildung zur Psychotherapeutin habe ich gelernt, wissenschaftlich fundierte Methoden und Konzepte in meiner praktischen Arbeit einzusetzen. Auf meinem persönlichen Lebensweg haben mir Achtsamkeit, Meditation und der Einbezug des Körpers ermöglicht, meine Herausforderungen aus einer ganzheitlichen Perspektive zu betrachten und anzugehen.</p>
+				<p>Der Schritt in die Selbständigkeit ermöglicht mir, diese beiden Herangehensweisen in meiner Arbeit zu vereinen, um Menschen in Veränderungs- und Wachstumsprozessen zu unterstützen.</p>
+				<p>Meine Arbeit ist ressourcen-, klärungs- und bewältigungsorientiert und beschäftigt sich stets mit der Frage, was Sie erreichen möchten, und wie es gelingen kann. 
+				Dabei sind für mich als eidgenössisch anerkannte Psychotherapeutin die Einhaltung der beruflichen Schweigepflicht und die kontinuierliche Fortbildung zur Qualitätssicherung selbstverständlich.</p> 
+				<p>Ich bin am Zürichsee aufgewachsen und lebe mit meinem Mann und Hund in einem ruhigen Quartier der Stadt Zürich, wo ich die Nähe zum Wald geniesse, ohne auf die Vorteile des Stadtlebens verzichten zu müssen. Mein Hund Bilko zeigt mir tagtäglich die kleinen und oft nicht wahrgenommenen Wunder der Natur, die wir auf unseren Spaziergängen und Wanderungen erkunden.</p>
+			</div>
+			<div class="column">
+				<img src="assets/judith-marty-fsp-psychologin-portrait.jpg">
+				<img class="bilko-pic" src="assets/judith-marty-fsp-psychologin-portrait-2.jpg">
+			</div>
+		</div>
+	<hr>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="column">
+				<h4>Fachtitel und Zusatzqualifikationen</h4>
+				<table>
+					<tr><td>Eidgenössisch anerkannte Psychotherapeutin</td></tr>
+					<tr><td><a target="_blank" href="https://www.psychologie.ch/member/judith-marty">Fachpsychologin für Psychotherapie FSP</a></td></tr>
+					<tr><td><a target="_blank" href="https://www.sgvt-sstcc.ch/fuer-ratsuchende/therapeutensuche/385/513">Verhaltenstherapeutin SGVT</a></td></tr>
+					<tr><td>Supervisorin in wissenschaftlicher Psychotherapie</td></tr>
+				</table>
+			</div>			
+			<div class="column">
+				<h4>Mitgliedschaften</h4>
+				<table>
+					<tr><td>Föderation der Schweizer Psychologinnen und Psychologen (FSP)</td></tr>
+					<tr><td>Schweizerische Gesellschaft für kognitive Verhaltenstherapie (SVGT)</td></tr>
+					<tr><td>Internationale Gesellschaft für Schematherapie (ISST)</td></tr>
+					<tr><td>Alzheimer Schweiz</td></tr>
+				</table>
+			</div>				
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>Spezial- und Interessengebiete</h4>
+				<table>
+					<tr><td>Burnout Prophylaxe und Behandlung</td></tr>
+					<tr><td>Achtsamkeit und Meditation</td></tr>
+					<tr><td>Testpsychologische Abklärungen</td></tr>
+					<tr><td>Interkulturelle Psychotherapie</td></tr>
+				</table>
+			</div>
+			<div class="column">
+				<h4>Sprachen</h4>
+				<table>
+					<tr><td>Deutsch (Muttersprache)</td></tr>
+					<tr><td>Englisch</td></tr>
+				</table>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="column">			
+				<h4>Beruflicher Hintergrund</h4>
+				<table>
+					<tr><td width="160">Seit 2021</td><td>Dozentin am Klaus-Grawe-Institut, Zürich</td></tr>
+					<tr><td>Seit 2019</td><td>Aufnahme der Selbständigkeit in eigener Praxis</td></tr>
+					<tr><td>2018 – 2019</td><td>Fachpsychologin für Psychotherapie an der APP Zug, Triaplus AG</td></tr>
+					<tr><td>2016 – 2017</td><td>Fachpsychologin für Psychotherapie am Ambulanten Psychiatrischen Dienst für Erwachsene,  Kanton Zug</td></tr>
+					<tr><td>2015 – 2016</td><td>Einjähriges Sabbatical</td></tr>
+					<tr><td>2011 – 2015</td><td>Psychologin am Ambulanten Psychiatrischen Dienst für Erwachsene,  Kanton Zug</td></tr>
+					<tr><td>2010 – 2011</td><td>Postgraduate Psychologin am Ambulanten Psychiatrischen Dienst für Erwachsene, Kanton Zug</td></tr>                        
+					<tr><td>2009 – 2010</td><td>Assistenzpsychologin am Psychiatrisch-Psychologischen Dienst, Stadt Zürich</td></tr>
+					<tr><td>2007 – 2008</td><td>Tutorin an der Abteilung Klinische Psychologie, Psychotherapie und Psychoanalyse, Universität Zürich</td></tr>
+					<tr><td>2006</td><td>Psychologie Praktikum an der Psychiatrischen Universitätsklinik der Charité, Berlin</td></tr>
+					<tr><td>2004 – 2008</td><td>Mitarbeiterin Präventionsarbeit bei der Fachstelle ASN, Zürich</td></tr>
+				</table>
+				</div>		
+			</div>
+			<div class="row">
+			<div class="column">
+				<h4>Aus- und Weiterbildung</h4>
+				<table>
+					<tr><td width="160">2022 – 2024</td><td>Fortbildung Schematherapie (Institut für Schematherapie Ostschweiz)</td></tr>
+					<tr><td>2018 – 2020</td><td>Advanced Training Supervision am Klaus-Grawe-Institut, Zürich</td></tr>
+					<tr><td>2010 – 2014</td><td> Postgraduale Weiterbildung für Psychotherapie mit kognitiv-behavioralem und interpersonalem Schwerpunkt am Klaus-Grawe-Institut, Zürich (Master of Advanced Studies der Universität Basel)</td></tr>
+					<tr><td>2002 – 2009</td><td>Psychologiestudium an der Universität Zürich</td></tr>					
+				</table>
+			</div>
+		</div>		
+	</div>
+</div>
+
+
+<!-- Footer -->
+<div id="footer"></div>
+<div id="finisher"></div>
+<div id="cookie-notice-banner"></div>
+</body>

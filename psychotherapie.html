@@ -1,0 +1,202 @@
+<html>
+<head>
+	<meta charset="utf-8">  
+	<title>Psychotherapie &ndash; Psychologische Praxis Judith Marty</title>
+	<meta name="description" content="Psychotherapie in Zürich &ndash; Psychologische Praxis Judith Marty">
+  	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="assets/milligram.min.css">
+	<link rel="stylesheet" href="assets/main.css">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMWX6CRR00"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="assets/components.js"></script>
+	<script>
+	// Google Tag
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-SMWX6CRR00');
+
+	// navigation
+	// when the user clicks on the button, toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("dropdown").classList.toggle("open");
+	};
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('open')) {
+	        openDropdown.classList.remove('open');
+	      }
+	    }
+	  }
+	};
+
+	// jquery
+	$(document).ready(function(){		
+
+		// page fade-in efx
+		$('#top-container, #content, #footer, #finisher').fadeIn(400);
+
+		// add navigation components and functions 
+		$('#navigation').append(navigationComponent);
+
+	    // add footer component
+	    $('#footer').append(footerComponent);	    	
+	    $('#finisher').append(finisherComponent);
+	    $('#cookie-notice-banner').append(cookieNoticeBanner);
+
+		// cookie notice banner
+		var currentYear = new Date().getFullYear();
+		var cookieNoticed = sessionStorage.getItem('cookie-noticed');
+		if (cookieNoticed != currentYear){
+			$('#cookie-notice-banner').fadeIn(400);
+		};
+	    $("#cookie-notice-banner-button").click(function(){
+			$('#cookie-notice-banner').fadeOut(400);		
+			sessionStorage.setItem('cookie-noticed',currentYear);
+		});
+	});
+	
+	</script>
+</head>
+<body>
+
+
+<!-- Header -->
+<div id="top-container">
+	<div class="container">
+		<div class="row">		
+    		<div class="column" id="logo">
+    			<a href="https://www.judith-marty.ch"><img src="assets/psychologische-praxis.svg" width="242"></a>
+    		</div>
+			<div class="column" id="navigation"></div>
+	    </div>
+	</div>
+	<div class="container">
+		<div class="row" id="stage">
+	    	<div class="column psychotherapie">
+	    		<div id="border">
+					<h1 class="show-lt-tablet">PSYCHOTHERAPIE</h1>
+					<h1 class="hide-lt-tablet">PSYCHOTHERAPIE</h1>
+				</div>
+	    	</div>
+		</div>	
+	</div>	
+</div>
+
+
+<!-- Content -->
+<div id="content" class="psychotherapie">
+	<div class="container">
+		<div class="row">
+			<div class="column column-33-lt-tablet">
+				<h2>Psychotherapie hilft</h2>
+			</div>
+			<div class="column">
+				<p>Belastende Symptome, Verhaltens- und Denkweisen und deren Hintergründe besser zu verstehen und zu bewältigen.</p>
+				<p>Die eigenen Gefühle besser einzuordnen und zu regulieren.</p>
+				<p>Wiederkehrende zwischenmenschliche Schwierigkeiten anzugehen und Konfliktlösefähigkeiten zu entwickeln.</p>
+				<p>Dadurch werden neue Möglichkeiten im eigenen Handeln und Erleben geschaffen.</p>
+				<p>Erfolgreiche Psychotherapie fördert Ihre Stärken und Ressourcen und trägt dazu bei, ein selbstbestimmtes Leben zu führen.</p>
+			</div>
+		</div>
+	<hr>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="column">
+				<h3>Psychologische Psychotherapie</h3>
+					<p>Das Erstgespräch dient dem gegenseitigen Kennenlernen und der Klärung Ihres Anliegens. Für die fachliche Einschätzung Ihrer Schwierigkeiten können neben dem persönlichen Gespräch ergänzend Fragebögen zum Einsatz kommen. Nach der Erarbeitung eines gemeinsamen Verständnisses Ihrer Problematik vereinbaren wir konkrete Therapieziele, die mit für Sie passenden Methoden angegangen werden.</p>
+					<p>Zentrales Element der psychologischen Psychotherapie ist das Gespräch. Zudem werden neben Gedanken und Gefühlen die damit einhergehenden Körperempfindungen einbezogen.</p>
+					<p>Ich verstehe Psychotherapie als "Hilfe zur Selbsthilfe", die solange angebracht ist, wie sie notwendig ist.</p>
+					<p>Meine Arbeitsweise orientiert sich an wissenschaftlich bewährten Methoden, wobei mir ein transparentes und individualisiertes Vorgehen wichtig ist.</p>
+					<p>Meine Vorgehensweise dient der Stärkung Ihrer Ressourcen und der Förderung Ihrer Selbstheilungskräfte.</p>				
+			</div>
+		</div>	
+		<hr>	
+	</div>	
+	<div class="container">
+		<div class="row">
+			<div class="column">
+				<h3>Mein Angebot</h3>					
+				<p>Ich behandle ein breites Spektrum an psychischen Erkrankungen und Beschwerden.</p> 
+				<p>Folgende Behandlungsbereiche gehören zu meinen Spezialgebieten:</p>
+				<ul>
+					<li>Depressionen</li>
+					<li>Burnout und Stressfolgeerkrankungen</li>
+					<li>Störungen der Emotionsregulation</li>
+					<li>Angststörungen</li>
+					<li>Belastungsstörungen und Traumafolgestörungen</li>
+					
+				</ul>
+				<p>Bei Bedarf biete ich ausserdem testpsychologische Abklärungen für verschiedene Fragestellungen an.</p>
+			</div>
+		</div>
+	<hr>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="column">
+				<h3>Tarif</h3>
+				<h4>Ärztlich angeordnete Psychotherapie über die Grundversicherung</h4>
+				<ul>
+					<li>Die Kosten werden von der Krankenkasse unter Berücksichtigung der Franchise und Selbstbehalt übernommen (in gleicher Weise wie z.B. Behandlungen bei Ihrer Hausärzt:in)</li>
+					<li>Damit eine Psychotherapie von der Grundversicherung übernommen wird, wird eine ärztliche Anordnung benötigt. Diese berechtigt zu 15 Sitzungen.</li>
+					<li>Die Anordnung kann von einer Allgemeinmediziner:in, einer Psychiater:in oder einer Fachärzt:in für psychosomatische Medizin ausgestellt werden</li>
+					<li>In Krisensituationen kann eine Ärzt:in aller Fachrichtungen eine Anordnung für eine Kurzzeittherapie ausstellen</li>
+					<li>Nach den 15 Sitzungen ist ein Austausch zwischen der anordnenden Fachperson und der Psychotherapeut:in erforderlich, um allenfalls weitere 15 Sitzungen anzuordnen</li>
+					<li>Sollte nach 30 Sitzungen eine Fortsetzung der Therapie notwendig sein, ist eine Kostengutsprache der zuständigen Krankenkasse notwendig, dafür muss ein psychiatrisches Gutachten erstellt werden</li>
+				</ul>
+				<p>Die ärztlich angeordnete Psychotherapie wird zu CHF 154.80 à 60 Minuten entgolten (Übergangstarif im Kanton Zürich) und pro Minute abgerechnet. Die Rechnungsstellung erfolgt direkt an die Krankenkasse mit elektronischer Kopie an Sie.</p>
+				<h4>Psychologische Psychotherapie für Selbstzahler:innen</h4>
+				<p>Die Kosten für psychologische Psychotherapie können auch als Selbstzahler:in privat bezahlt werden.</p>
+				<p>Der Tarif für psychologische Psychotherapie beträgt für das Erstgespräch à 90 Minuten CHF 270 und für eine reguläre Einzelsitzung à 60 Minuten CHF 180 (inkl. Vor- und Nachbereitung) und wird pro 5 Minuten abgerechnet.</p>
+				<p>
+					<img class="pdf" src="assets/pdf.png"><a target="_blank" href="assets/Anordnung%20psychologische%20Psychotherapie%20Judith%20Marty.pdf">Formular Anordnung psychologische Psychotherapie</a><br>
+					<img class="pdf" src="assets/pdf.png"><a target="_blank" href="assets/FSP%20Informationen%20für%20Patientinnen.pdf">FSP Informationen für Patientinnen</a><br>
+					<img class="pdf" src="assets/pdf.png"><a target="_blank" href="assets/FSP%20Informationen%20für%20anordnende%20Fachpersonen.pdf">FSP Informationen für anordnende Fachpersonen</a></p>
+			</div>	
+		</div>
+	<hr>
+	</div>
+	<div class="container">
+		<div class="row kontakt">				
+			<div class="column  left">
+				<a href="judith-marty.html"><img src="assets/judith-marty-psychotherapeutin-angebot.jpg"></a>
+			</div>
+			<div class="column right">
+				<h3>Kontakt aufnehmen</h3>				
+				<p><a href="mailto:judith.marty@hin.ch">judith.marty@hin.ch</a>
+				<br><a href="tel:+41787041044">+41 78 704 10 44</a></p>
+				<a href="judith-marty.html">Mehr über mich erfahren</a>
+			</div>		
+		</div>
+	<hr>
+	</div>
+	<div class="container">
+		<div class="row">			
+			<div class="column">
+				<div class="grey-box">
+					<h3>Notfälle</h3>
+					<p>Wenden Sie sich im Notfall an den ärztlichen Notfalldienst:<br>
+						Ärztefon, Notarzt und Notfallpsychiater in der Stadt Zürich: 0800 33 66 55 (24h)</p>
+					<p>oder an das Kriseninterventionszentrum:<br>
+					Krisenintervention KIZ, Militärstrasse 8, 8021 Zürich: 044 296 73 10 (24h)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Footer -->
+<div id="footer"></div>
+<div id="finisher"></div>
+<div id="cookie-notice-banner"></div>
+</body>

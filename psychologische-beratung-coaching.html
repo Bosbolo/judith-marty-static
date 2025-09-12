@@ -1,0 +1,204 @@
+<html>
+<head>	
+	<meta charset="utf-8">  
+	<title>Psychologische Beratung&nbsp;&&nbsp;Coaching &ndash; Psychologische Praxis Judith Marty.</title>
+	<meta name="description" content="Psychologische Beratung in Zürich &ndash; Psychologische Praxis in Zürich">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="assets/milligram.min.css">
+	<link rel="stylesheet" href="assets/main.css">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMWX6CRR00"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="assets/components.js"></script>
+	<script>
+	// Google Tag
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-SMWX6CRR00');
+
+	// navigation
+	// when the user clicks on the button, toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("dropdown").classList.toggle("open");
+	};
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('open')) {
+	        openDropdown.classList.remove('open');
+	      }
+	    }
+	  }
+	};
+
+	// jquery
+	$(document).ready(function(){		
+
+		// page fade-in efx
+		$('#top-container, #content, #footer, #finisher').fadeIn(400);
+
+		// add navigation components and functions 
+		$('#navigation').append(navigationComponent);
+
+	    // add footer component
+	    $('#footer').append(footerComponent);	    	
+	    $('#finisher').append(finisherComponent);
+	    $('#cookie-notice-banner').append(cookieNoticeBanner);
+
+		// cookie notice banner
+		var currentYear = new Date().getFullYear();
+		var cookieNoticed = sessionStorage.getItem('cookie-noticed');
+		if (cookieNoticed != currentYear){
+			$('#cookie-notice-banner').fadeIn(400);
+		};
+	    $("#cookie-notice-banner-button").click(function(){
+			$('#cookie-notice-banner').fadeOut(400);		
+			sessionStorage.setItem('cookie-noticed',currentYear);
+		});
+	});
+	
+	</script>
+</head>
+<body>
+
+
+<!-- Header -->
+<div id="top-container">
+	<div class="container">
+		<div class="row">		
+    		<div class="column" id="logo">
+    			<a href="https://www.judith-marty.ch"><img src="assets/psychologische-praxis.svg" width="242"></a>
+    		</div>
+			<div class="column" id="navigation"></div>
+	    </div>
+	</div>
+	<div class="container">
+		<div class="row" id="stage">
+	    	<div class="column beratung">
+	    		<div id="border">
+					<h1 class="show-lt-tablet">BERATUNG & COACHING</h1>
+					<h1 class="hide-lt-tablet">BERATUNG<br>& COACHING</h1>
+				</div>
+	    	</div>
+		</div>	
+	</div>	
+</div>
+
+
+<!-- Content -->
+<div id="content" class="coaching">
+	<div class="container">
+		<div class="row">
+			<div class="column column-33-lt-tablet">
+				<h2>Sie stecken fest?</h2>
+			</div>
+			<div class="column">
+				<p>Eine psychologische Beratung oder ein Coaching bietet professionelle Unterstützung in privaten und beruflichen Veränderungssituationen.</p>
+				<p>Inhalte können eine Herausforderung, eine Krise, ein Konflikt, eine komplexe Entscheidung oder der Wunsch nach einer Neuorientierung sein.</p>
+				<p>Mein Vorgehen ist individuell, gezielt und lösungsorientiert und ermöglicht mehr Klarheit und neuen Handlungsspielraum.</p>
+				<p>Mein Angebot richtet sich sowohl an Einzelpersonen als auch an Teams.</p>
+			</div>
+		</div>
+	<hr>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="column">
+				<h3>Möchten Sie ein bestimmtes Ziel erreichen oder sich über eine Situation Klarheit verschaffen?</h3>
+					<p>In einem ersten Gespräch klären wir gemeinsam Ihr Anliegen und legen die weiteren Schritte fest. Entscheiden Sie sich für ein Coaching oder eine Beratung, definieren wir Ihr Ziel, das Vorgehen und die Lösungsschritte.</p>
+					<p>Der Coachingprozess ermöglicht die Auflösung von Blockaden und den Zugang zu neuen Perspektiven und Handlungsmöglichkeiten.</p>
+					<p>Dabei werden Ihre persönlichen Kompetenzen erweitert, um konkrete Lösungen zu entwickeln, und die von Ihnen gesetzten Ziele zu erreichen.</p>				
+			</div>
+		</div>	
+		<hr>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="column">					
+				<h3>Mit diesen Themen sind Sie bei mir richtig</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>Stress & Burnout</h4>
+				<ul>
+					<li>Burnout Prophylaxe und Work-Life-Balance</li>
+					<li>Doppelbelastung Familie und Beruf</li>
+					<li>Vereinbarkeit von Kind und Karriere</li>
+					<li>Stress- und Zeitmanagement</li>
+					<li>Förderung von Achtsamkeit und Entspannung</li>
+					<li>Erholung im Alltag</li>
+					<li>Berufliche Neuorientierung</li>
+				</ul>
+			</div>
+			<div class="column">					
+				<h4>Persönlichkeitsentwicklung</h4>
+				<ul>
+					<li>Stärkung des Selbstwerts</li>
+					<li>Aufbau von sozialen und emotionalen Kompetenzen</li>
+					<li>Auflösung von unangemessenen Verhaltensweisen und Mustern</li>
+					<li>Förderung von Selbstfürsorge und Selbstmitgefühl</li>
+					<li>Fehlerfreundlichkeit</li>	
+				</ul>
+			</div>
+			<div class="column">					
+				<h4>Individuelle Themen</h4>
+				<ul>
+					<li>Unterstützung bei akuten Krisen und Konflikten</li>
+					<li>Übergang zu neuer Lebensphase</li>
+					<li>Beziehungs- und Bindungsschwierigkeiten</li>
+					<li>Verlust, Trennung, Verlassen werden</li>
+					<li>Entscheidungsfindung</li>
+					<li>Arbeitsplatzverlust</li>
+				</ul>
+			</div>						
+		</div>
+		<div class="row">
+			<div class="column">
+				<p>Nehmen Sie mit mir <a href="kontakt.php">Kontakt</a> auf für die Klärung Ihres Anliegens.</p>
+			</div>
+		</div>
+		<hr>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="column">
+				<h3>Tarife</h3>
+				<h4>Tarif Einzelpersonen</h4>
+				<p>Reguläres Beratungsgespräch à 60 Minuten CHF 180 (inkl. Vor- und Nachbereitung).<br>
+				Erstgespräch à 90 Minuten CHF 270.<br> 
+				Die Kosten werden nicht von der Krankenkasse übernommen.</p>
+				<h4>Tarif Teams</h4>
+				<p>Auf Anfrage.</p>
+			</div>	
+		</div>
+	<hr>
+	</div>
+	<div class="container">
+		<div class="row kontakt">				
+			<div class="column  left">
+				<a href="judith-marty.html"><img src="assets/judith-marty-psychotherapeutin-angebot.jpg"></a>
+			</div>
+			<div class="column right">
+				<h3>Kontakt aufnehmen</h3>				
+				<p><a href="mailto:judith.marty@hin.ch">judith.marty@hin.ch</a>
+				<br><a href="tel:+41787041044">+41 78 704 10 44</a></p>
+				<a href="judith-marty.html">Mehr über mich erfahren</a>
+			</div>		
+		</div>
+	<hr>
+	</div>	
+</div>
+
+
+<!-- Footer -->
+<div id="footer"></div>
+<div id="finisher"></div>
+<div id="cookie-notice-banner"></div>
+</body>

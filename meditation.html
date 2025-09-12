@@ -1,0 +1,192 @@
+<html>
+<head>
+	<meta charset="utf-8">  
+	<title>Meditation &ndash; Psychologische Praxis Judith Marty</title>
+	<meta name="description" content="Judith Marty &ndash; Biljana Münch &ndash; Psychologische Praxis in Zürich">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="assets/milligram.min.css">
+	<link rel="stylesheet" href="assets/main.css">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMWX6CRR00"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="assets/components.js"></script>
+	<script>
+	// Google Tag
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-SMWX6CRR00');
+
+	// navigation
+	// when the user clicks on the button, toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("dropdown").classList.toggle("open");
+	};
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('open')) {
+	        openDropdown.classList.remove('open');
+	      }
+	    }
+	  }
+	};
+
+	// jquery
+	$(document).ready(function(){		
+
+		// page fade-in efx
+		$('#top-container, #content, #footer, #finisher').fadeIn(400);
+
+		// add navigation components and functions 
+		$('#navigation').append(navigationComponent);
+
+	    // add footer component
+	    $('#footer').append(footerComponent);	    	
+	    $('#finisher').append(finisherComponent);
+	    $('#cookie-notice-banner').append(cookieNoticeBanner);
+
+		// cookie notice banner
+		var currentYear = new Date().getFullYear();
+		var cookieNoticed = sessionStorage.getItem('cookie-noticed');
+		if (cookieNoticed != currentYear){
+			$('#cookie-notice-banner').fadeIn(400);
+		};
+	    $("#cookie-notice-banner-button").click(function(){
+			$('#cookie-notice-banner').fadeOut(400);		
+			sessionStorage.setItem('cookie-noticed',currentYear);
+		});
+	});
+	
+	</script>
+</head>
+<body>
+
+
+<!-- Header -->
+<div id="top-container">
+	<div class="container">
+		<div class="row">		
+    		<div class="column" id="logo">
+    			<a href="https://www.judith-marty.ch"><img src="assets/psychologische-praxis.svg" width="242"></a>
+    		</div>
+	    </div>
+	</div>
+	<div class="container">
+		<div class="row" id="stage">
+	    	<div class="column">
+	    		<div id="border">
+					<h1>Meditation Audio Files</h1>
+				</div>
+	    	</div>
+		</div>	
+	</div>	
+</div>
+
+
+<!-- Content -->
+<div id="content" class="meditation">
+	<div class="container audiofiles">
+		<div class="row">
+			<div class="column">
+				<h4>Body Scan in English</h4>
+				<p>Instructions for body scan, spoken by Judith Marty</p>
+				<figure>
+				    <audio
+				        controls
+				        src="https://www.judith-marty.ch/assets/Judith-Marty-Body-Scan-EN.mp3">
+				            Your browser does not support the
+				            <code>audio</code> element.
+				    </audio>
+				</figure>				
+			</div>	
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>Body Scan in Deutsch</h4>
+				<p>Anleitung zum Body Scan, gesprochen von Judith Marty</p>				
+				<figure>
+				    <audio
+				        controls
+				        src="https://www.judith-marty.ch/assets/Judith-Marty-Body-Scan-DE.mp3">
+				            Your browser does not support the
+				            <code>audio</code> element.
+				    </audio>
+				</figure>
+			</div>	
+		</div>		
+		<hr>
+	</div>
+	<div class="container audiofiles">
+		<div class="row">
+			<div class="column">
+				<h4>Sitting Meditation in English</h4>
+				<p>Instructions for sitting meditation, spoken by Judith Marty</p>
+				<figure>
+				    <audio
+				        controls
+				        src="https://www.judith-marty.ch/assets/Judith-Marty-Sitting-Meditation.mp3">
+				            Your browser does not support the
+				            <code>audio</code> element.
+				    </audio>
+				</figure>				
+			</div>	
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>Sitzmeditation in Deutsch</h4>
+				<p>Anleitung zur Sitzmeditation, gesprochen von Judith Marty</p>				
+				<figure>
+				    <audio
+				        controls
+				        src="https://www.judith-marty.ch/assets/Judith-Marty-Sitzmeditation-DE.mp3">
+				            Your browser does not support the
+				            <code>audio</code> element.
+				    </audio>
+				</figure>
+			</div>	
+		</div>		
+		<hr>
+	</div>	
+	<div class="container audiofiles">
+		<div class="row">
+			<div class="column">
+				<h4>Imaginary safe-place in English</h4>
+				<p>Instructions for the safe-place, spoken by Judith Marty</p>
+				<figure>
+				    <audio
+				        controls
+				        src="https://www.judith-marty.ch/assets/Judith-Marty-imaginary-safe-place-EN.mp3">
+				            Your browser does not support the
+				            <code>audio</code> element.
+				    </audio>
+				</figure>				
+			</div>	
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>Imaginationsübung Ressourcenort in Deutsch</h4>
+				<p>Anleitung zum Ressourcenort, gesprochen von Judith Marty</p>				
+				<figure>
+				    <audio
+				        controls
+				        src="https://www.judith-marty.ch/assets/Judith-Marty-Imaginationsuebung-Ressourcenort-DE.mp3">
+				            Your browser does not support the
+				            <code>audio</code> element.
+				    </audio>
+				</figure>
+			</div>	
+		</div>		
+	</div>		
+</div>
+
+<!-- Footer -->
+<div id="footer"></div>
+<div id="finisher"></div>
+<div id="cookie-notice-banner"></div>
+</body>

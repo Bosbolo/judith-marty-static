@@ -1,0 +1,192 @@
+<html>
+<head>
+	<meta charset="utf-8">  
+	<title>Supervision &ndash; Psychologische Praxis Judith Marty</title>
+	<meta name="description" content="Supervision in Zürich &ndash; Psychologische Praxis Judith Marty &ndash; eidg. anerkannte Psychotherapeutin und Supervisorin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="assets/milligram.min.css">
+	<link rel="stylesheet" href="assets/main.css">	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMWX6CRR00"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="assets/components.js"></script>
+	<script>
+	// Google Tag
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-SMWX6CRR00');
+
+	// navigation
+	// when the user clicks on the button, toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("dropdown").classList.toggle("open");
+	};
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('open')) {
+	        openDropdown.classList.remove('open');
+	      }
+	    }
+	  }
+	};
+
+	// jquery
+	$(document).ready(function(){		
+
+		// page fade-in efx
+		$('#top-container, #content, #footer, #finisher').fadeIn(400);
+
+		// add navigation components and functions 
+		$('#navigation').append(navigationComponent);
+
+	    // add footer component
+	    $('#footer').append(footerComponent);	    	
+	    $('#finisher').append(finisherComponent);
+	    $('#cookie-notice-banner').append(cookieNoticeBanner);
+
+		// cookie notice banner
+		var currentYear = new Date().getFullYear();
+		var cookieNoticed = sessionStorage.getItem('cookie-noticed');
+		if (cookieNoticed != currentYear){
+			$('#cookie-notice-banner').fadeIn(400);
+		};
+	    $("#cookie-notice-banner-button").click(function(){
+			$('#cookie-notice-banner').fadeOut(400);		
+			sessionStorage.setItem('cookie-noticed',currentYear);
+		});
+	});
+	
+	</script>	
+</head>
+<body>
+
+
+<!-- Header -->
+<div id="top-container">
+	<div class="container">
+		<div class="row">		
+    		<div class="column" id="logo">
+    			<a href="https://www.judith-marty.ch"><img src="assets/psychologische-praxis.svg" width="242"></a>
+    		</div>
+			<div class="column" id="navigation"></div>
+	    </div>
+	</div>
+	<div class="container">
+		<div class="row" id="stage">
+	    	<div class="column">
+	    		<div id="border">
+					<h1>SUPERVISION</h1>
+				</div>
+	    	</div>
+		</div>	
+	</div>	
+</div>
+
+
+<!-- Content -->
+<div id="content" class="supervision">
+	<div class="container">
+		<div class="row">
+			<div class="column column-33-lt-mobile">
+				<h3>Mein Angebot</h3>
+			</div>
+			<div class="column">
+				<p>Gemeinsame Reflexion des eigenen, beruflichen Handelns sowie Qualitätssicherung der professionellen Arbeit.</p>
+				<p>Inhalte sind die praktische Arbeit mit dem Klienten bzw. Patienten sowie die Zusammenarbeit im Team und in der Organisation.</p>
+				<p>Meine Supervision richtet sich an Einzelpersonen, Gruppen, Teams und Organisationen.</p>
+			</div>
+		</div>
+	<hr>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="column">
+				<h2>Fallsupervision<br>(Einzel- und Gruppensupervision)</h2>
+				<p>Besprechung von herausfordernden Situationen in der Arbeit mit Klienten bzw. Patienten sowie gemeinsame Entwicklung von Herangehensweisen.<br>Die Fallsupervision dient der Erweiterung der eigenen Handlungsmöglichkeiten im beruflichen Umfeld.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>An wen richtet sich das Angebot?</h4>
+				<ul>
+					<li>Angehende Psychotherapeuten und Psychiater im Rahmen der Psychotherapieweiterbildung</li>
+					<li>Psychologische und ärztliche Psychotherapeuten</li>
+					<li>Fachpersonen im Gesundheits- und Sozialbereich sowie im pädagogischen Bereich</li>
+					<li>Kliniken und Institutionen</li>
+				</ul>
+			</div>		
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>Anerkennung</h4>
+				<ul>
+					<li>Klaus-Grawe-Institut für Psychologische Therapie</li>
+					<li>Postgraduale Weiterbildung in kognitiver Verhaltenstherapie und Verhaltensmedizin der Universität Zürich</li>
+					<li>Ärztliche Psychotherapie der Universität Zürich</li>
+					<li>Akademie für Verhaltenstherapie und Methodenintegration AIM (Assoziierte Lehrtherapeutin für Verhaltenstherapie)</li>
+					<li>Postgraduale Studiengänge in Psychotherapie (PSP)</li>
+					<li>Anerkennung von weiteren Instituten auf Anfrage</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>Tarif</h4>
+				<p>Einheit à 45-50 Minuten CHF 180.<br>
+				Es können einzelne Einheiten oder Blöcke zu mehreren Einheiten vereinbart werden.</p>
+			</div>
+		</div>
+	<hr>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="column">
+				<h2>Teamsupervision</h2>
+				<p>In meiner Supervision steht der Umgang der Teammitglieder miteinander im Vordergrund.</p>
+				<p>Ziel ist die gemeinsame Entwicklung einer kooperativen Arbeitsatmosphäre, die Analyse und Bearbeitung von Konflikten, die gemeinsame Erarbeitung von Lösungen und die Nutzung von Synergien.</p>
+				<p>Die Supervision dient der Erhöhung der Arbeitszufriedenheit, der Verbesserung der Teamkommunikation, der Förderung von Problembewusstsein und der Entwicklung von Bewältigungsstrategien zur Lösung von Konflikten. Inhalte sind die Zusammenarbeit im Team, Ziele, Prozesse, Strukturen und Werte.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>An wen richtet sich das Angebot?</h4>
+				<p>Teams, Organisationen und Unternehmen verschiedener Berufsgruppen.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h4>Tarif</h4>
+				<p>Auf Anfrage.</p>
+			</div>	
+		</div>	
+		<hr>
+	</div>	
+	<div class="container">
+		<div class="row kontakt">				
+			<div class="column  left">
+				<a href="judith-marty.html"><img src="assets/judith-marty-psychotherapeutin-angebot.jpg"></a>
+			</div>
+			<div class="column right">
+				<h3>Kontakt aufnehmen</h3>				
+				<p><a href="mailto:judith.marty@hin.ch">judith.marty@hin.ch</a>
+				<br><a href="tel:+41787041044">+41 78 704 10 44</a></p>
+				<a href="judith-marty.html">Mehr über mich erfahren</a>
+			</div>		
+		</div>
+	<hr>
+	</div>
+</div>
+
+
+<!-- Footer -->
+<div id="footer"></div>
+<div id="finisher"></div>
+<div id="cookie-notice-banner"></div>
+</body>

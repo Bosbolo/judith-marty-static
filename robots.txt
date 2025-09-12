@@ -1,0 +1,3 @@
+Sitemap: https://www.judith-marty.ch/sitemap.txt
+User-agent: *
+Disallow:https://www.judith-marty.ch/hilti.html
