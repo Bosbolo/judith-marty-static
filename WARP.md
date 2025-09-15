@@ -30,7 +30,6 @@ Every HTML page follows this consistent pattern:
 - **Cookie Management**: Session-based cookie consent tracking
 - **Contact Form**: PHP-based contact form in `kontakt.php` (currently commented out)
 - **Google Analytics**: Integrated tracking with ID `G-SMWX6CRR00`
-- **Photo Gallery**: Unite Gallery plugin for practice photos
 - **Audio Content**: Embedded meditation recordings (German/English)
 
 ## Development Commands
@@ -84,7 +83,6 @@ The `assets/` directory contains all required static resources:
 - **CSS Files**: `normalize.css`, `milligram.min.css`, `main.css`
 - **JavaScript**: `components.js` with navigation, footer, and cookie banner components
 - **Images**: Professional photos, SVG logo, backgrounds
-- **Gallery**: Photo gallery with Unite Gallery plugin (`unitegallery/`)
 - **Audio Files**: Meditation MP3s (German and English)
 - **PDF Documents**: Forms and information sheets for psychotherapy
 - **Fonts**: Custom Helvetica Neue UltraLight font
