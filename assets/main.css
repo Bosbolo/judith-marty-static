@@ -543,7 +543,8 @@ figure {
 	margin-bottom: 0
 }
 
-#content.workshops #angebot ul {
+#content.workshops #angebot ul,
+#content.stressworkshop #angebot ul {
 	margin: 0 0 1rem 1.3rem
 }
 
