@@ -33,6 +33,11 @@ This is a static HTML website for "Psychologische Praxis Judith Marty", a psycho
 - Start with `npm start` 
 - Automatic cache control headers prevent caching issues
 
+### Prod Development
+- Runs on Vercel
+- Project "praxis-judith-marty"
+- URL www.judith-marty.ch
+
 ### Replit Configuration
 - **Workflow**: "Website" runs `npm start` 
 - **Output**: WebView for website preview
