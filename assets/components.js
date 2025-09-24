@@ -100,9 +100,9 @@ function initVercelSpeedInsights() {
     (window.siq = window.siq || []).push(arguments); 
   };
 
-  // Dynamically load the Speed Insights script
+  // Dynamically load the Vercel-hosted Speed Insights script
   var script = document.createElement('script');
-  script.src = 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@1.2.0/dist/index.js';
+  script.src = '/_vercel/speed-insights/script.js';
   script.defer = true;
   document.head.appendChild(script);
 }
