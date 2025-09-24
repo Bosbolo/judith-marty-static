@@ -24,6 +24,7 @@ This is a static HTML website for "Psychologische Praxis Judith Marty", a psycho
 - **Footer** with contact information and service links
 - **Cookie banner** for GDPR compliance
 - **Google Analytics** integration (ID: G-SMWX6CRR00)
+- **Vercel Speed Insights** integration for Core Web Vitals and performance monitoring
 
 ## Development & Deployment
 
@@ -54,8 +55,12 @@ This is a static HTML website for "Psychologische Praxis Judith Marty", a psycho
 │   └── documents/ (PDF forms and information sheets)
 ```
 
-## Recent Changes (September 22, 2025)
+## Recent Changes
 
+### September 24, 2025
+- **Vercel Speed Insights Integration**: Added performance monitoring to track Core Web Vitals (LCP, FID, CLS, TTFB) and real user metrics. Integrated via CDN script in `assets/components.js` for automatic loading on all pages.
+
+### September 22, 2025
 - **GitHub Import Setup**: Configured fresh clone to run in Replit environment
 - **Express Server**: Created `server.js` with static file serving and clean URL routing
 - **Workflow Configuration**: Set up "Website" workflow to run on port 5000
@@ -68,6 +73,7 @@ This is a static HTML website for "Psychologische Praxis Judith Marty", a psycho
 - Express.js for static file serving
 - jQuery (loaded from CDN) for DOM manipulation
 - Google Fonts and external analytics
+- Vercel Speed Insights (loaded from CDN) for performance monitoring
 
 ### Performance Considerations
 - Images optimized for responsive design (desktop/mobile variants)
