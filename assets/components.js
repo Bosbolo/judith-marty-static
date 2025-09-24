@@ -93,6 +93,20 @@ function initGoogleAnalytics() {
   gtag("config", "G-SMWX6CRR00");
 }
 
+// Vercel Speed Insights setup
+function initVercelSpeedInsights() {
+  // Initialize Speed Insights queue
+  window.si = window.si || function () { 
+    (window.siq = window.siq || []).push(arguments); 
+  };
+
+  // Dynamically load the Speed Insights script
+  var script = document.createElement('script');
+  script.src = 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@1.2.0/dist/index.js';
+  script.defer = true;
+  document.head.appendChild(script);
+}
+
 // Cookie notice functionality
 function initCookieNotice() {
   var currentYear = new Date().getFullYear();
@@ -112,6 +126,9 @@ function initCookieNotice() {
 function initPageComponents() {
   // Initialize Google Analytics
   initGoogleAnalytics();
+  
+  // Initialize Vercel Speed Insights
+  initVercelSpeedInsights();
 
   // Page fade-in effect
   $("#top-container, #content, #footer, #finisher").fadeIn(400);
