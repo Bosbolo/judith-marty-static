@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
+        <meta
+            name="description"
+            content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" href="/assets/normalize.css" />
+        <link rel="stylesheet" href="/assets/milligram.min.css" />
+        <link rel="stylesheet" href="/assets/main.css" />
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id={{ site.googleAnalyticsId }}"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '{{ site.googleAnalyticsId }}');
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="/assets/common.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <div id="top-container">
+            <div class="container">
+                <div class="row{% if headerRowVisible %} rowVisible{% endif %}">
+                    <div class="column" id="logo">
+                        <a href="{{ site.url }}"
+                            ><img
+                                src="/assets/psychologische-praxis.svg"
+                                width="242"
+                        /></a>
+                    </div>
+                    <div class="column" id="navigation">{% include "partials/navigation.liquid" %}</div>
+                </div>
+            </div>
+            {% if stage %}<div class="container"><div class="row" id="stage">{{ stage }}</div></div>{% endif %}
+        </div>
+
+        <!-- Content -->
+        <div id="content"{% if pageClass %} class="{{ pageClass }}"{% endif %}>{{ content }}</div>
+
+        <!-- Footer -->
+        <div id="footer">{% include "partials/footer.liquid" %}</div>
+        <div id="finisher"></div>
+        <div id="cookie-notice-banner">{% include "partials/cookie-banner.liquid" %}</div>
+    </body>
+</html>
