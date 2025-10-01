@@ -2,68 +2,131 @@
 
 ## Project Overview
 
-This is a static HTML website for "Psychologische Praxis Judith Marty", a psychological therapy practice in Zurich, Switzerland. The website serves as the main online presence for the practice, offering information about services including psychotherapy, counseling, supervision, and workshops.
+This is a static website for "Psychologische Praxis Judith Marty", a psychological therapy practice in Zurich, Switzerland. The website serves as the main online presence for the practice, offering information about services including psychotherapy, counseling, supervision, and workshops. The site is built using Eleventy (11ty) static site generator with Liquid templating.
 
 ## Architecture & Setup
 
 ### Frontend Architecture
-- **Component-based architecture** using vanilla JavaScript and jQuery
-- **Static HTML files** for all pages (index.html, about.html, kontakt.html, etc.)
-- **Shared components** loaded dynamically via `assets/components.js`
+- **Eleventy Static Site Generator** using Liquid templating engine
+- **Component-based templates** with reusable layouts and partials
+- **Data-driven navigation** and site metadata via JSON files
 - **CSS Framework** built on Milligram CSS with custom styling in `assets/main.css`
 - **Responsive design** with mobile-first approach
+- **Build-time rendering** for optimal performance and SEO
+
+### Build System
+- **Eleventy (v3.1.2)** compiles Liquid templates to static HTML
+- **Input directory**: `src/` contains all templates and data
+- **Output directory**: `_site/` contains the built static site
+- **Template formats**: Liquid, HTML, Markdown
+- **Build command**: `npm run build` (runs Eleventy)
+- **Dev command**: `npm run dev` (runs Eleventy with live reload)
 
 ### Server Setup
-- **Express.js server** (`server.js`) serving static files on port 5000
+- **Express.js server** (`server.js`) serves built files from `_site/` on port 5000
 - **Cache control** headers disabled for development
 - **Route handling** for clean URLs (supports both `/page` and `/page.html`)
 - **Host binding** to `0.0.0.0:5000` for Replit environment compatibility
 
+### Template System
+- **Layouts**: `src/_includes/layouts/base.liquid` - Main layout with header, navigation, footer
+- **Partials**:
+  - `src/_includes/partials/navigation.liquid` - Dropdown navigation menu
+  - `src/_includes/partials/footer.liquid` - Footer with contact info and service links
+  - `src/_includes/partials/finisher.liquid` - Copyright and privacy policy link
+  - `src/_includes/partials/cookie-banner.liquid` - GDPR cookie consent banner
+- **Data Files**:
+  - `src/_data/site.json` - Site metadata, contact info, analytics IDs, cookie notice text
+  - `src/_data/navigation.json` - Navigation menu structure with dropdown items
+
 ### Key Components
-- **Navigation** with dropdown menu functionality
+- **Navigation** with dropdown menu functionality (JavaScript-enhanced)
 - **Footer** with contact information and service links
-- **Cookie banner** for GDPR compliance
+- **Cookie banner** for GDPR compliance with sessionStorage
 - **Google Analytics** integration (ID: G-SMWX6CRR00)
-- **Vercel Speed Insights** integration for Core Web Vitals and performance monitoring
+- **Vercel Speed Insights** integration for Core Web Vitals monitoring
+- **Active page highlighting** in navigation
+
+### JavaScript
+- **assets/navigation.js** - Provides interactive functionality:
+  - Dropdown menu toggle and outside-click-to-close
+  - Active menu item highlighting based on current page
+  - Cookie banner show/hide with sessionStorage persistence
+  - Page fade-in animations
+  - Vercel Speed Insights initialization
+- **assets/common.js** - Google Analytics configuration
+- **jQuery** loaded from CDN for DOM manipulation
 
 ## Development & Deployment
 
 ### Local Development
-- Server runs on port 5000 using Express.js
-- Start with `npm start` 
-- Automatic cache control headers prevent caching issues
+- **Build**: `npm run build` - Compiles Eleventy templates to _site/
+- **Dev**: `npm run dev` - Runs Eleventy with live reload (BrowserSync)
+- **Start**: `npm start` - Runs Express server serving _site/ on port 5000
+- **Workflow**: "Website" runs `npm run build && npm start`
 
-### Prod Development
-- Runs on Vercel
-- Project "praxis-judith-marty"
-- URL www.judith-marty.ch
+### Production Deployment
+- **Platform**: Vercel
+- **Project**: "praxis-judith-marty"
+- **URL**: www.judith-marty.ch
+- **Deployment**: Configured for "autoscale" deployment target
 
 ### Replit Configuration
-- **Workflow**: "Website" runs `npm start` 
+- **Workflow**: "Website" runs `npm run build && npm start`
 - **Output**: WebView for website preview
-- **Deployment**: Configured for "autoscale" deployment target
+- **Port**: 5000
 
 ### File Structure
 ```
 /
-├── server.js (Express server for static file serving)
-├── package.json (Node.js dependencies)
-├── index.html (Homepage)
-├── about.html, kontakt.html, etc. (Individual pages)
+├── .eleventy.js (Eleventy configuration)
+├── server.js (Express server serving _site/)
+├── package.json (Node.js dependencies including Eleventy)
+├── src/ (Source files for Eleventy)
+│   ├── _data/
+│   │   ├── site.json (Site metadata, contact, analytics)
+│   │   └── navigation.json (Menu structure)
+│   ├── _includes/
+│   │   ├── layouts/
+│   │   │   └── base.liquid (Main layout template)
+│   │   └── partials/
+│   │       ├── navigation.liquid (Navigation menu)
+│   │       ├── footer.liquid (Footer section)
+│   │       ├── finisher.liquid (Copyright section)
+│   │       └── cookie-banner.liquid (Cookie consent)
+│   └── pages/
+│       ├── index.liquid (Homepage)
+│       ├── about.liquid, praxis.liquid, kontakt.liquid (Info pages)
+│       ├── psychotherapie.liquid, supervision.liquid, etc. (Service pages)
+│       └── [14 pages total]
+├── _site/ (Built output - served by Express)
 ├── assets/
-│   ├── components.js (Shared navigation, footer, cookie banner)
-│   ├── common.js (Google Analytics setup)
+│   ├── navigation.js (Interactive functionality)
+│   ├── common.js (Google Analytics)
 │   ├── main.css (Custom styling)
 │   ├── milligram.min.css, normalize.css (CSS frameworks)
-│   ├── images/ (Professional photos, logo, backgrounds)
+│   ├── images/ (Photos, logo, backgrounds)
 │   ├── audio/ (Meditation MP3s in German/English)
 │   └── documents/ (PDF forms and information sheets)
+└── [Legacy HTML files - now migrated to src/pages/]
 ```
 
 ## Recent Changes
 
+### October 1, 2025
+- **Eleventy Migration**: Complete migration from static HTML with JavaScript component injection to Eleventy static site generator with Liquid templates
+  - Installed and configured Eleventy v3.1.2 with Liquid templating
+  - Created base.liquid layout with flexible stage/hero section and dynamic content classes
+  - Built reusable partials for navigation, footer, finisher, and cookie banner
+  - Migrated all 14 pages to Liquid templates with proper front matter
+  - Created data files for site metadata and navigation structure
+  - Developed navigation.js for dropdown, active highlighting, and cookie banner functionality
+  - Updated build workflow to compile with Eleventy before serving
+  - Updated server.js to serve from _site/ directory
+- **Benefits**: Improved maintainability, centralized configuration, build-time rendering, easier content updates
+
 ### September 24, 2025
-- **Vercel Speed Insights Integration**: Added performance monitoring to track Core Web Vitals (LCP, FID, CLS, TTFB) and real user metrics. Integrated via CDN script in `assets/components.js` for automatic loading on all pages.
+- **Vercel Speed Insights Integration**: Added performance monitoring to track Core Web Vitals (LCP, FID, CLS, TTFB) and real user metrics
 
 ### September 22, 2025
 - **GitHub Import Setup**: Configured fresh clone to run in Replit environment
@@ -75,21 +138,34 @@ This is a static HTML website for "Psychologische Praxis Judith Marty", a psycho
 ## Technical Notes
 
 ### Dependencies
-- Express.js for static file serving
-- jQuery (loaded from CDN) for DOM manipulation
-- Google Fonts and external analytics
-- Vercel Speed Insights (loaded from CDN) for performance monitoring
+- **@11ty/eleventy** (v3.1.2) - Static site generator
+- **Express.js** - Static file server for development
+- **jQuery** (CDN) - DOM manipulation for interactive features
+- **Milligram CSS** - Minimal CSS framework
+- **Google Analytics** - Usage tracking
+- **Vercel Speed Insights** - Performance monitoring
 
 ### Performance Considerations
-- Images optimized for responsive design (desktop/mobile variants)
-- Components loaded dynamically to reduce duplication
-- Clean URL structure for SEO
+- **Build-time rendering** - All HTML generated at build time, not runtime
+- **Static assets** - Images, CSS, JS served directly without processing
+- **Optimized images** - Desktop and mobile variants for responsive design
+- **Clean URL structure** - SEO-friendly URLs
+- **Component reuse** - DRY principle with Liquid partials
+- **Data-driven** - Centralized configuration in JSON files
 
 ### Content Management
-- All text content in German for Swiss audience
-- Semantic HTML structure for accessibility
-- Professional photography and branding assets
-- GDPR-compliant privacy policy and cookie management
+- **14 pages total**: Homepage, 5 service pages, 8 information pages
+- **German language** - All content for Swiss audience
+- **Semantic HTML** - Accessibility-focused structure
+- **GDPR compliance** - Cookie banner with consent management
+- **Professional assets** - Photography and branding materials
+
+### Template Development
+- **Front matter variables**: layout, title, description, permalink, pageClass, headerRowVisible, stage
+- **Liquid filters available**: Standard Liquid filters plus Eleventy filters
+- **Data access**: {{ site.* }} for site.json, {{ navigation.* }} for navigation.json
+- **Includes**: {% include "partials/name.liquid" %}
+- **Content injection**: {{ content }} in layouts
 
 ## User Preferences
 
