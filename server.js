@@ -4,8 +4,8 @@ const path = require('path');
 const app = express();
 const PORT = 5000;
 
-// Serve static files from the root directory
-app.use(express.static(__dirname, {
+// Serve static files from the _site directory
+app.use(express.static(path.join(__dirname, '_site'), {
     // Disable caching for development
     setHeaders: (res, path) => {
         res.set('Cache-Control', 'no-cache, no-store, must-revalidate');
@@ -16,7 +16,7 @@ app.use(express.static(__dirname, {
 
 // Handle root route
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, '_site', 'index.html'));
 });
 
 // Handle routes without .html extension
@@ -25,7 +25,7 @@ app.get('/:page', (req, res, next) => {
     
     // If the request doesn't have an extension, try adding .html
     if (!path.extname(page)) {
-        const htmlPath = path.join(__dirname, page + '.html');
+        const htmlPath = path.join(__dirname, '_site', page + '.html');
         return res.sendFile(htmlPath, (err) => {
             if (err) {
                 next();
