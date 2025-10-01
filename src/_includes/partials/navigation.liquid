@@ -1,0 +1,16 @@
+{% for item in navigation.items %}
+{% if item.dropdown %}
+<a id="angebot" class="dropbtn" href="javascript:void(0);" onclick="myFunction()">{{ item.label }} &#9662;</a>
+<div id="dropdown" class="dropdown-content">
+  {% for dropdownItem in item.dropdown %}
+  {% if dropdownItem.type == "separator" %}
+  <hr>
+  {% else %}
+  <a href="{{ dropdownItem.url }}">{{ dropdownItem.label }}</a>
+  {% endif %}
+  {% endfor %}
+</div>
+{% else %}
+<a href="{{ item.url }}">{{ item.label }}</a>
+{% endif %}
+{% endfor %}
