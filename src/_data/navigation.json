@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "label": "Angebot",
+      "url": "javascript:void(0);",
+      "dropdown": [
+        {
+          "label": "Psychotherapie",
+          "url": "psychotherapie.html"
+        },
+        {
+          "label": "Beratung & Coaching",
+          "url": "psychologische-beratung-coaching.html"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "label": "Supervision",
+          "url": "supervision.html"
+        },
+        {
+          "label": "Selbsterfahrung",
+          "url": "selbsterfahrung.html"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "label": "Workshops",
+          "url": "workshops.html"
+        }
+      ]
+    },
+    {
+      "label": "About",
+      "url": "about.html"
+    },
+    {
+      "label": "Praxis",
+      "url": "praxis.html"
+    },
+    {
+      "label": "Kontakt",
+      "url": "kontakt.html"
+    }
+  ]
+}

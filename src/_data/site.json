@@ -1,0 +1,23 @@
+{
+  "title": "Psychologische Praxis Judith Marty",
+  "description": "Supervision – Selbsterfahrung – Psychologische Beratung & Coaching in Zürich – eidg. anerkannte Psychotherapeutin und Supervisorin",
+  "url": "https://www.judith-marty.ch",
+  "googleAnalyticsId": "G-SMWX6CRR00",
+  "contact": {
+    "email": "judith.marty@hin.ch",
+    "phoneDisplay": "+41 78 704 10 44",
+    "phoneTel": "+41787041044"
+  },
+  "address": {
+    "street": "Universitätstrasse 65",
+    "postalCode": "8006",
+    "city": "Zürich",
+    "mapsLink": "https://maps.app.goo.gl/dbHSkVHXjeEvcBWYA"
+  },
+  "privacyPolicyUrl": "datenschutzerklaerung.html",
+  "cookieNotice": {
+    "buttonLabel": "Akzeptieren",
+    "message": "Diese Website verwendet Cookies. Mit der Nutzung der Website akzeptieren Sie die Anwendung von Cookies."
+  },
+  "copyrightYear": 2025
+}
