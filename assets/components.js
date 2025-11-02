@@ -11,7 +11,7 @@ var navigationComponent = `
               <hr>
               <a href="workshops.html">Workshops</a>
             </div>
-          <a href="about.html">About</a>
+          <a href="judith-marty.html">About</a>
           <a href="praxis.html">Praxis</a>
           <a href="kontakt.html">Kontakt</a>
   `;
