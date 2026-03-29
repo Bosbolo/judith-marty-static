@@ -1,6 +1,32 @@
+/* ==========================================================================
+   COLOR VARIABLES - Change these to recolor the entire site
+   ========================================================================== */
+:root {
+	--color-primary: #363636;        /* Main text color */
+	--color-secondary: #091A3C;       /* H3/H4 text color */
+	--color-white: #EAE1DA;          /* White */
+
+	--color-accent: #A0B099; /* Links, buttons, footer bg */
+	--color-accent-btn: #D7E7CF;     /* Button background */
+	--color-accent-light: #87ADBD;   /* Accent variant (commented as original) */
+
+	--color-header-bg: #3A7591;      /* Top container background */
+	--color-header-txt: #34302B
+	--color-dark: #263423;           /* Footer bottom, finisher, cookie banner */
+
+	--color-border: #d7d7d7;         /* Borders and dividers */
+	--color-grey-box: #f1f1f1;       /* Grey box backgrounds */
+
+	--color-alert-danger: #FFE4E4;    /* Error alert background */
+	--color-alert-success: #DEFFDD;  /* Success alert background */
+
+	--color-cookie-btn: #BBCBB3;      /* Cookie banner button */
+}
+
 /* Mobile First Media Queries */
 body {
 	letter-spacing: 0;
+	background-color: color: var(--color-white);
 }
 
 @font-face {
@@ -15,12 +41,12 @@ p,
 a,
 li,
 label {
-	color: #363636
+	color: var(--color-primary);
 }
 
 h3,
 h4 {
-	color: #484848;
+	color: var(--color-secondary);
 }
 
 h1,
@@ -45,7 +71,7 @@ span {
 }
 
 h1 {
-	color: #fff;
+	color: var(--color-white);
 	font-size: 2.4rem;
 	letter-spacing: 0.5rem;
 	line-height: 3.2rem;
@@ -98,12 +124,11 @@ p {
 }
 
 a {
-	color: rgb(124, 182, 198)
+	color: var(--color-accent);
 }
 
-/* Ursprüngliche Farbe #87ADBD*/
 a:hover {
-	color: rgb(124, 182, 198);
+	color: var(--color-accent);
 	text-decoration: underline;
 }
 
@@ -136,8 +161,8 @@ textarea,
 select {
 	padding: 1.6rem 1.6rem;
 	height: 4.8rem;
-	border-color: #d7d7d7;
-	border-radius: 0
+	border-color: var(--color-border);
+	border-radius: 0;
 }
 
 input[type='email']:focus,
@@ -149,7 +174,7 @@ input[type='text']:focus,
 input[type='url']:focus,
 textarea:focus,
 select:focus {
-	border-color: rgb(124, 182, 198);
+	border-color: var(--color-accent);
 }
 
 label {
@@ -170,16 +195,16 @@ textarea {
 }
 
 button {
-	background-color: rgb(124, 182, 198);
+	background-color: var(--color-accent);
 	border: none;
 	margin-top: 1.2rem;
 	height: 4.8rem;
 	text-transform: none;
-	width: 16rem
+	width: 16rem;
 }
 
 button:hover {
-	background-color: #363636;
+	background-color: var(--color-primary);
 }
 
 textarea {
@@ -188,10 +213,10 @@ textarea {
 
 td {
 	padding: 0.8rem;
-	color: #363636;
+	color: var(--color-primary);
 	font-size: 1.6rem;
 	font-weight: 300;
-	border-bottom: 0.1rem solid #D7D7D7;
+	border-bottom: 0.1rem solid var(--color-border);
 }
 
 td a {
@@ -212,12 +237,12 @@ figure {
 }
 
 #top-container {
-	background-color: #3A7591;
-	color: #fff;
-	background: url(fernsicht.jpg);
+	background-color: var(--color-header-bg);
+	background: url(newheroimage/1.jpg);
 	background-size: cover;
-	background-position: 50% 0%;
+	background-position: 50% 5%;
 }
+
 
 #top-container .column {
 	width: auto
@@ -240,24 +265,24 @@ figure {
 #navigation span {
 	display: inline;
 	font-weight: 200;
-	color: #fff;
+	color: var(--color-white);
 	margin-right: 1.6rem;
 	letter-spacing: 0;
 }
 
 #navigation a:last-child {
-	margin-right: 0
+	margin-right: 0;
 }
 
 #navigation a:hover,
 #navigation span:hover {
-	color: #051825;
+	color: var(--color-dark);
 	text-decoration: none;
 }
 
 #navigation a.selected,
 #navigation span.selected {
-	color: #051825;
+	color: var(--color-dark);
 }
 
 #navigation #dropdown {
@@ -269,7 +294,7 @@ figure {
 #navigation #dropdown {
 	display: none;
 	position: absolute;
-	background: #fff;
+	background: var(--color-white);
 	background-image: url("dropdown-triangle.png");
 	background-repeat: no-repeat;
 	width: 92%;
@@ -282,7 +307,7 @@ figure {
 }
 
 #navigation #dropdown a {
-	color: #363636;
+	color: var(--color-primary);
 	display: block;
 	margin: 0;
 	padding: 0.8rem 0 0.8rem 2rem;
@@ -290,8 +315,8 @@ figure {
 
 #navigation #dropdown a:hover,
 #navigation #dropdown-content a.selected {
-	background: rgb(124, 182, 198);
-	color: #fff
+	background: var(--color-accent);
+	color: var(--color-white);
 }
 
 #navigation #dropdown a:first-child {
@@ -304,14 +329,14 @@ figure {
 
 #navigation #dropdown hr {
 	border: 0;
-	border-top: 0.1rem solid #d7d7d7;
+	border-top: 0.1rem solid var(--color-border);
 	margin: 1.6rem 0;
 }
 
 #stage .column #border {
 	margin: 1.6rem 0 2.4rem 0;
 	padding: 15rem 1.6rem 2.4rem 2.4rem;
-	border: 1px solid #fff
+	border: 1px solid var(--color-white);
 }
 
 #stage .column.index #border {
@@ -322,7 +347,7 @@ figure {
 	margin: 2.4rem 0 0 0;
 	font-size: 3.2rem;
 	line-height: 3.2rem;
-	color: #ffffff;
+	color: var(--color-header-txt);
 	text-align: center;
 }
 
@@ -336,7 +361,7 @@ figure {
 
 #content hr {
 	margin: 1.6rem 0 0 0;
-	border-top: 0.1rem solid #D7D7D7;
+	border-top: 0.1rem solid var(--color-border);
 }
 
 #content.index hr {
@@ -464,7 +489,7 @@ figure {
 
 #content.kontakt span {
 	font-size: 16px;
-	color: #D7D7D7
+	color: var(--color-border);
 }
 
 #content.kontakt form {
@@ -485,11 +510,11 @@ figure {
 }
 
 #content.kontakt .alert-danger {
-	background-color: #FFE4E4
+	background-color: var(--color-alert-danger);
 }
 
 #content.kontakt .alert-success {
-	background-color: #DEFFDD
+	background-color: var(--color-alert-success);
 }
 
 #content.kontakt .sicherheitsfrage {
@@ -549,8 +574,8 @@ figure {
 }
 
 #footer {
-	background: rgb(124, 182, 198);
-	margin-top: 3.2rem
+	background: var(--color-accent);
+	margin-top: 3.2rem;
 }
 
 #footer .row {
@@ -568,7 +593,7 @@ figure {
 #footer h5,
 #footer p,
 #footer a {
-	color: #363636
+	color: var(--color-primary);
 }
 
 #footer h5 {
@@ -581,8 +606,8 @@ figure {
 }
 
 #footer a:hover {
-	color: #fff;
-	text-decoration: none
+	color: var(--color-white);
+	text-decoration: none;
 }
 
 #footer p {
@@ -591,7 +616,7 @@ figure {
 
 #finisher {
 	height: 4.8rem;
-	background: #051825;
+	background: var(--color-dark);
 }
 
 #finisher .column {
@@ -601,8 +626,8 @@ figure {
 #finisher p,
 #finisher a {
 	font-size: 1.6rem;
-	color: #fff;
-	margin: 0
+	color: var(--color-white);
+	margin: 0;
 }
 
 #finisher a {
@@ -613,11 +638,11 @@ figure {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	background: #051825;
+	background: var(--color-dark);
 }
 
 #cookie-notice-banner p {
-	color: #fff;
+	color: var(--color-white);
 }
 
 #cookie-notice-banner p,
@@ -635,7 +660,7 @@ figure {
 	width: 12rem;
 	margin: 1.2rem 0;
 	padding: 0;
-	background-color: #2d7a8f
+	background-color: var(--color-cookie-btn);
 }
 
 /* Helper */
@@ -649,8 +674,8 @@ figure {
 
 .grey-box {
 	padding: 3.2rem;
-	background-color: #f1f1f1;
-	margin-bottom: 1.6rem
+	background-color: var(--color-grey-box);
+	margin-bottom: 1.6rem;
 }
 
 .grey-box h3 {
@@ -663,8 +688,8 @@ figure {
 
 .grey-box-wcolumns {
 	padding: 3.2rem;
-	background-color: #f1f1f1;
-	margin-bottom: 1.6rem
+	background-color: var(--color-grey-box);
+	margin-bottom: 1.6rem;
 }
 
 p.lead {
@@ -682,8 +707,8 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-	background: #7cb6c6;
-	border-color: #7cb6c6;
+	background: var(--color-accent-btn);
+	border-color: var(--color-accent-btn);
 	height: 4rem;
 	line-height: 4rem;
 	font-size: 1.6rem;
@@ -696,7 +721,7 @@ button.button-outline,
 input[type='button'].button-outline,
 input[type='reset'].button-outline,
 input[type='submit'].button-outline {
-	color: #7cb6c6
+	color: var(--color-accent-btn);
 }
 
 .button.button-outline:focus,
@@ -709,10 +734,10 @@ input[type='reset'].button-outline:focus,
 input[type='reset'].button-outline:hover,
 input[type='submit'].button-outline:focus,
 input[type='submit'].button-outline:hover {
-	border-color: #d7d7d7;
-	background: #d7d7d7;
+	border-color: var(--color-border);
+	background: var(--color-border);
 	text-decoration: none;
-	color: #484848
+	color: var(--color-secondary);
 }
 
 /* Larger than mobile screen */
