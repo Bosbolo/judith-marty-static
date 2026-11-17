@@ -396,7 +396,8 @@ figure {
 }
 
 #content.psychotherapie .pdf,
-#content.selbsterfahrung .pdf {
+#content.selbsterfahrung .pdf,
+#content.workshops .pdf {
     width: 24px;
     margin: 0 1rem 0 0;
 }
@@ -419,6 +420,14 @@ figure {
     font-weight: 600;
     letter-spacing: 0.04rem;
     margin: 0 0 4rem 0;
+}
+
+#content.workshops .column-module {
+    display: flex;
+}
+
+#content.workshops .column-module .grey-box {
+    width: 100%;
 }
 
 #content.workshops #angebot h3 {
